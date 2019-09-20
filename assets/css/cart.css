@@ -1,0 +1,140 @@
+/* CSS General */
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* CSS h1 */
+
+.tu-carrito {
+  margin: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+}
+
+/* Detalle de cada articulo */
+
+article {
+  margin: 20px 40px;
+  border-bottom: 1px solid grey;
+}
+.articleContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.articleImg {
+}
+article img {
+  width: 80%;
+}
+article .articleText {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+article .articleName {
+  margin-top: 0;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+article .articleDetails {
+  margin-top: 5px;
+}
+article .articleDetails p {
+  margin: 12px 0;
+  font-size: 12px;
+}
+article .articlePrice {
+  font-weight: bold;
+}
+
+article .articleButtons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-bottom: 15px;
+}
+
+article .articleButtons button {
+  width: 100px;
+  background-color: #fafafa;
+  font-size: 12px;
+  height: 25px;
+  border-radius: 5px;
+}
+.buttonModificar {
+  margin-right: 10px;
+}
+/* Resumen */
+
+.resumenContainer {
+  margin: 20px 40px;
+  padding: 15px;
+  background-color: #fafafa;
+}
+
+.resumenProduct {
+  display: flex;
+  justify-content: space-between;
+}
+.resumenTotal {
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+
+.resumenBoton {
+  display: flex;
+  justify-content: center;
+}
+.resumenBoton button {
+  margin-top: 15px;
+  width: 200px;
+  font-size: 20px;
+  height: 40px;
+  color: white;
+  background-color: rgb(9, 167, 9);
+  border-radius: 5px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .tu-carrito {
+    width: 80%;
+  }
+  article {
+    width: 80%;
+  }
+  article .articleName {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  article .articleDetails p {
+    font-size: 18px;
+  }
+
+  .resumenContainer {
+    width: 80%;
+    margin-top: 90px;
+  }
+  .containerGeneral {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .tu-carrito {
+    width: 110%;
+  }
+  article {
+    width: 110%;
+  }
+}
