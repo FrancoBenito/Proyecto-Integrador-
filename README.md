@@ -1,3 +1,5 @@
-# Proyecto-Integrador-
+# Proyecto Integrador
 
-Este es el repo del proyecto integrador 1 de DH..
+Este es el repositorio del proyecto integrador de DH.
+
+Actualmente desarrollondo los mockups del proyecto.
