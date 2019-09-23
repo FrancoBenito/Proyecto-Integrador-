@@ -1,0 +1,67 @@
+body {
+  display: block;
+  background-image:url(foto-proyecto.jpg);
+  background-size: 100% 100%;
+}
+header{
+  background-color: black;
+}
+h1{
+  color: white;
+  padding-left: 25px;
+}
+nav ul{
+  list-style-type: none;
+  overflow: hidden;
+  text-align: center;
+}
+nav ul li{
+  float: left;
+  width: 20%;
+}
+nav ul li a{
+  display: block;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  background-color: grey;
+  text-align: center;
+}
+.formulario{
+  border: grey 5px solid;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  padding-left: 200px;
+  background-color: white;
+  display: block;
+  margin-left: 100px;
+  margin-right: 200px;
+}
+h2{
+text-align: center;
+margin-top:10px;
+color: white;
+font-size: 40px;
+}
+label{
+  color: black;
+}
+p{
+  color: black;
+}
+footer{
+  background-color: black;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+footer p{
+  color: white;
+  text-align: 20px;
+  padding-left: 30px;
+  font-size: 20px;
+}
+.pie{
+  padding-left:1000px;
+  color: red;
+  font-size: 30px;
+}
