@@ -1,0 +1,45 @@
+header p{
+  float: right;
+  margin-top: -5px;
+  color: #aaa69d;
+  font-size: 30px;
+}
+header h1{
+  border-bottom: grey 2px solid;
+  padding-bottom: 15px;
+}
+section div{
+  border-bottom: grey 1px solid;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+
+}
+section div label{
+  margin-left: 20px;
+  margin-right: 80px;
+  font-size: 20px;
+}
+section div input{
+  margin-left: 80px;
+  width: 50%;
+  height: 30px;
+  border-radius: 6px;
+  background-color: #d1ccc0 ;
+}
+textarea{
+  margin-left: 19%;
+  margin-top: -20px;
+  border-radius: 6px;
+}
+footer div button{
+  border-radius: 6px;
+  width: 140px;
+  height: 50PX;
+  float:right;
+  margin-right: 25%;
+}
+footer div button:hover{
+  background-color: black;
+  color: white;
+}
