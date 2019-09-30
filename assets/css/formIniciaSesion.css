@@ -1,0 +1,52 @@
+body {
+  padding-top: 100px;
+}
+#form__IniciaSesion {
+  width: 100%;
+}
+.form__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form__inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__inputs input {
+  width: 90%;
+  margin: 10px 0;
+}
+
+.form__checkbox {
+  margin-left: 20px;
+}
+.form__buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+.form__buttons button {
+  width: 80%;
+}
+
+.form__buttons p {
+  margin-top: 15px;
+}
+
+@media only screen and (min-width: 768px) {
+  #form__IniciaSesion {
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 50px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 15px 0;
+  }
+}
