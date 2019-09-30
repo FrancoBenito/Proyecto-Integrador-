@@ -2,4 +2,4 @@
 
 Este es el repositorio del proyecto integrador de DH.
 
-Actualmente desarrollando los mockups del proyecto.
+Trabajando en el Sprint 1 del proyecto. Fecha de entrega: 01/10.
