@@ -1,0 +1,20 @@
+body {
+  padding-top: 50px;
+}
+@media only screen and (min-width: 768px) {
+  .form {
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 5px;
+  }
+}
+
+.form__container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form__container h2 {
+  margin: 40px 0;
+}

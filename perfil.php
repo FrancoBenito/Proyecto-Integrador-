@@ -45,16 +45,13 @@
     <!-- Header -->
     <header>
       <nav
-        id="menu"
-        class="col-md-12 col-sm-4 navbar default navbar-expand-lg navbar-light bg-dark fira-text2"
+        class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark pt-0 pb-0"
       >
-        <!-- logo -->
-        <a class=" navbar-brand ml-4" href="index.html"
-          ><img src="/assets/img/drh_logo80.png"
+        <a class="navbar-brand" href="index.php">
+          <img src="./assets/img/drh_logo72.png" alt=""
         /></a>
-        <!-- logo -->
         <button
-          class="navbar-toggler navbar-light"
+          class="navbar-toggler"
           type="button"
           data-toggle="collapse"
           data-target="#navbarSupportedContent"
@@ -62,86 +59,87 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon mr-5"
-            ><i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
-          </span>
+          <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto text-uppercase mt-3 fira-text2">
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link text-center text-white dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Internacional <span class="sr-only">(current)</span></a
               >
-                <b>CAMISETAS</b>
-              </a>
-              <div
-                class="dropdown-menu text-center"
-                aria-labelledby="navbarDropdown"
-              >
-                <a class="dropdown-item" href="#">CLUBES</a>
-                <a class="dropdown-item" href="#">SELECCIONES</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">OTRAS</a>
-              </div>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link text-center text-white pointer"
-                data-toggle="modal"
-                data-target="#Modal"
-                cursor="pointer"
-                ><b>CONTACTO</b></a
-              >
+              <a class="nav-link" href="#">URBA</a>
             </li>
-
-            <li class="nav-item mr-md-4">
-              <a
-                class="nav-link text-center text-white"
-                href="formIniciaSesion.html"
-                tabindex="-1"
-                aria-disabled="true"
-                ><b>INICIA SESIÓN</b></a
-              >
-            </li>
-            <li class="nav-item mr-md-4">
-              <a
-                class="nav-link text-center text-white"
-                href="perfil.html"
-                tabindex="-1"
-                aria-disabled="true"
-                ><b>PERFIL</b></a
-              >
-            </li>
-            <li class="nav-item mr-md-4">
-              <a
-                class="nav-link text-center text-white"
-                href="carrito.html"
-                tabindex="-1"
-                aria-disabled="true"
-                ><b>CARRITO</b></a
-              >
+            <li class="nav-item">
+              <a class="nav-link" href="#">Ofertas</a>
             </li>
           </ul>
-          <form class="form-inline my-2 my-lg-0 mr-5">
-            <input
-              class="form-control mr-sm-2"
-              type="search"
-              placeholder="Buscar"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">
-              <i class="fas fa-search" aria-hidden="true"></i>
-            </button>
+          <form class="form-inline my-2 my-lg-0">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="formIniciaSesion.php"
+                  >Inicia Sesión</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="formCrearCuenta.php">Registrate</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="carrito.php">Carrito</a>
+              </li>
+            </ul>
           </form>
         </div>
       </nav>
     </header>
+
+    <!-- Footer -->
+    <footer class="page-footer fixed-bottom font-small blue pt-4 bg-dark">
+      <!-- Footer Links -->
+      <div class="container-fluid text-center text-md-left">
+        <!-- Grid row -->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-6 mt-md-0 mt-3">
+            <!-- Content -->
+            <h5 class="text-uppercase">Digital Rugby House</h5>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="clearfix w-100 d-md-none pb-3" />
+
+          <!-- Grid column -->
+          <div class="col-md-3 mb-md-0 mb-3">
+            <!-- Links -->
+            <h5 class="text-uppercase">Links</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">Preguntas frecuentes</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 mb-md-0 mb-3">
+            <!-- Links -->
+            <h5 class="text-uppercase">Redes sociales</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">Facebook</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+      <!-- Footer Links -->
+    </footer>
 
     <div class="container__general">
       <section class="cuenta__container">
