@@ -19,3 +19,4 @@ Pendientes:
 -Corregir validación de contraseña en el login
 -Cerrar sesión
 -Persistir datos en session
+-Mejorar html.
