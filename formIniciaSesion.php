@@ -1,7 +1,8 @@
 <?php
   // Requiero mi archivo de funciones para validar los datos
   require_once("funciones.php");
-  // Valido que se haya cargado por POST. 
+  $emailDefault = ""; 
+  // Valido que se haya cargado por POST.
   if($_POST){
     $datosIngresados = $_POST;
     // Validar 
@@ -20,6 +21,7 @@
     header("Location:perfil.php?id=" . $usuario["id"]);
     exit;
   }
+  $emailDefault = generarPersistenciaEmail($errores);
 }
 ?>
 <!DOCTYPE html>
@@ -120,19 +122,22 @@
     </header>
 
     <!-- Formulario -->
-    <form id="form__IniciaSesion" action="formIniciaSesion.php" method="post">
+    <form id="form__IniciaSesion" action="formIniciaSesion.php" method="post" autocomplete="off">
       <div class="form__title">
         <h3>Inicia Sesión</h3>
       </div>
+      <input id="username" style="display:none" type="text" name="fakeusernameremembered">
+      <input id="password" style="display:none" type="password" name="fakepasswordremembered">
+      
       <div class="form__inputs">
-        <input type="text" placeholder="Tu email" name="email" />
+        <input type="text" placeholder="Tu email" name="email" value= "<?= $emailDefault ?>" autocomplete="nope"/>
         <div class="form__error">
         <?php if($_POST && isset($errores["email"])){
           echo "<p>" . $errores["email"] . "</p>";
         }
         ?>
         </div>
-        <input type="text" placeholder="Contraseña" name="password"/>
+        <input type="password" placeholder="Contraseña" name="password" autocomplete="new-password"/>
         <div class="form__error">
         <?php if($_POST && isset($errores["password"])){
           echo "<p>" . $errores["password"] . "</p>";

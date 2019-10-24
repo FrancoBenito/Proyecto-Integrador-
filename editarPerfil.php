@@ -1,38 +1,11 @@
-<?php 
-// Requiero mi archivo de funciones para validar los datos
-require_once("funciones.php");
+<?php
+  session_start();
 
-// Genero variables default para persistencia.
-$nombreDefault = "";
-$emailDefault = ""; 
-
-// Verifico que venga por post
-if($_POST){
-  $datosIngresados = $_POST;
-  // Validación 
-  $errores = validarRegistracion($datosIngresados);
-    // Si no hay errores
-    if(empty($errores)){
-      // Registro al usuario
-        //Generar Usuario
-        $usuario = generarNuevoUsuario($datosIngresados);
-        //Lo agrego al JSON
-        agregarUsuarioJSON($usuario);
-      // Redirijo a la página login.php
-      header("Location:index.php");
-      exit;
-    } else {
-      // Armar la persistencia de los datos
-      $nombreDefault = generarPersistenciaNombre($errores);
-      $emailDefault = generarPersistenciaEmail($errores);
-    }
-}
-
+  var_dump($_SESSION);
 ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -69,8 +42,9 @@ if($_POST){
     />
 
     <!-- CSS Propio -->
-    <link rel="stylesheet" href="./assets/css/formCrearCuenta.css" />
-    <title>Crear Cuenta</title>
+    <link rel="stylesheet" href="./assets/css/perfil.css" />
+
+    <title>Tu perfil</title>
   </head>
   <body>
     <!-- Header -->
@@ -126,50 +100,11 @@ if($_POST){
       </nav>
     </header>
 
-    <!-- Formulario -->
-    <form id="form__IniciaSesion" action="formCrearCuenta.php" method="post" autocomplete="off" enctype="multipart/form-data">
-      <div class="form__title">
-        <h3>Crear Cuenta</h3>
-      </div>
-      <div class="form__inputs">
-        <input type="text" placeholder="Nombre" name="name" value= "<?= $nombreDefault ?>" />
-        <div class="form__error">
-        <?php if($_POST && isset($errores["name"])){
-          echo "<p>" . $errores["name"] . "</p>";
-        }
-        ?>
-        </div>
-        <input type="text" placeholder="Email" name="email" value= "<?= $emailDefault ?>"/>
-        <div class="form__error">
-          <?php if($_POST && isset($errores["email"])){
-            echo "<p>" . $errores["email"] . "</p>";
-          }
-          ?>
-        </div>
-        <input type="text" placeholder="Contraseña" name="password"/>
-        <div class="form__error">
-          <?php if($_POST && isset($errores["password"])){
-            echo "<p>" . $errores["password"] . "</p>";
-          }
-          ?>
-        </div>
-        <input type="text" placeholder="Confirmar contraseña" name= "cpassword" />
-        <div class="form__error">
-          <?php if($_POST && isset($errores["cpassword"])){
-            echo "<p>" . $errores["cpassword"] . "</p>";
-          }
-          ?>
-          <?php if($_POST && isset($errores["password_conf"])){
-            echo "<p>" . $errores["password_conf"] . "</p>";
-          }
-          ?>
-        </div>
-        <!-- <input name="uploadedfile" type="file" /> -->
-      </div>
-      <div class="form__buttons">
-        <button>Crear Cuenta</button>
-      </div>
-    </form>
+  <!-- Perfil -->
+    <section class="container__general">
+
+    </section>
+
     <!-- Footer -->
     <footer class="page-footer fixed-bottom font-small blue pt-4 bg-dark">
       <!-- Footer Links -->
@@ -219,18 +154,18 @@ if($_POST){
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
       crossorigin="anonymous"
     ></script>
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
       crossorigin="anonymous"
     ></script>
     <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
   </body>

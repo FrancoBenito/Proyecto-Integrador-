@@ -1,3 +1,8 @@
+<?php
+  session_start();
+
+  var_dump($_SESSION);
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -37,7 +42,7 @@
     />
 
     <!-- CSS Propio -->
-    <link rel="stylesheet" href="/assets/css/perfil.css" />
+    <link rel="stylesheet" href="./assets/css/perfil.css" />
 
     <title>Tu perfil</title>
   </head>
@@ -95,6 +100,35 @@
       </nav>
     </header>
 
+  <!-- Perfil -->
+    <section class="container__general">
+      <section class="cuenta__container">
+        <h1>Tu cuenta</h1>
+        <div class="cuenta__tarjeta__fila">
+        <a href="editarPerfil.php">
+          <article class="cuenta__opciones">
+            <h2>Tu perfil</h2>
+            <p>Editar nombre, contraseña y demás.</p>
+          </article>
+        </a>
+          <article class="cuenta__opciones">
+            <h2>Tus pedidos</h2>
+            <p>Seguir, devolver y repetir pedidos.</p>
+          </article>
+        </div>
+        <div class="cuenta__tarjeta__fila">
+          <article class="cuenta__opciones">
+            <h2>Direcciones</h2>
+            <p>Editar tus direcciones.</p>
+          </article>
+          <article class="cuenta__opciones">
+            <h2>Medios de pago</h2>
+            <p>Agregar o ediar medios de pago.</p>
+          </article>
+        </div>
+      </section>
+    </section>
+
     <!-- Footer -->
     <footer class="page-footer fixed-bottom font-small blue pt-4 bg-dark">
       <!-- Footer Links -->
@@ -140,32 +174,6 @@
       </div>
       <!-- Footer Links -->
     </footer>
-
-    <div class="container__general">
-      <section class="cuenta__container">
-        <h1>Tu cuenta</h1>
-        <div class="cuenta__tarjeta__fila">
-          <article class="cuenta__opciones">
-            <h2>Tu perfil</h2>
-            <p>Editar nombre, contraseña y demás.</p>
-          </article>
-          <article class="cuenta__opciones">
-            <h2>Tus pedidos</h2>
-            <p>Seguir, devolver y repetir pedidos.</p>
-          </article>
-        </div>
-        <div class="cuenta__tarjeta__fila">
-          <article class="cuenta__opciones">
-            <h2>Direcciones</h2>
-            <p>Editar tus direcciones.</p>
-          </article>
-          <article class="cuenta__opciones">
-            <h2>Medios de pago</h2>
-            <p>Agregar o ediar medios de pago.</p>
-          </article>
-        </div>
-      </section>
-    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

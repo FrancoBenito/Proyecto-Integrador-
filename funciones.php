@@ -102,17 +102,17 @@ function agregarUsuarioJSON($usuario){
 }
 
 function generarPersistenciaNombre($errores){
-  if(isset($errores["name"]) == false){
+  if(!isset($errores["name"])){
     $nombreDefault = $_POST["name"];
+    return $nombreDefault;
   } 
-  return $nombreDefault;
 }
 
 function generarPersistenciaEmail($errores){
-  if (isset($errores["email"]) == false) {
+  if (!isset($errores["email"])) {
     $emailDefault = $_POST["email"];
+    return $emailDefault;
   }
-  return $emailDefault;
 }
 // Funciones de login
 
@@ -125,8 +125,10 @@ function validarLogin($datos){
   //Lo convierto en un Array
   $usuariosArray = json_decode($usuarios, true);
   //Recorro el Array
+
   foreach($usuariosArray as $elemento){
-    if($datos["email"] === $elemento["email"]){
+    $errores = [];
+    if($datos["email"] == $elemento["email"]){
       $mailCoincide = true;
       if(password_verify($datos["password"],$elemento["password"])){
         $passwordCoincide = true;
