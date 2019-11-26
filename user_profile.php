@@ -19,18 +19,15 @@
     
     <!-- bootstrap -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <!-- bootsnav -->
-    <link rel="stylesheet" href="assets/css/bootsnav.css">
     <!-- style -->
-    <link rel="stylesheet" href="assets/css/profile.css" />
+    <link rel="stylesheet" href="assets/css/profile.css?1.0" />
     <!-- responsive css -->
     <link rel="stylesheet" href="assets/css/profile_responsive.css" />
-
   </head>
   <body class="bg-light-gray">
     <!-- Header -->
     <?php 
-    //include('navbar.php');
+    include('navbar.php');
     ?>
 
     <!-- Perfil -->
