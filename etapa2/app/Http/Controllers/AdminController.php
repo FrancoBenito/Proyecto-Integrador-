@@ -38,9 +38,12 @@ class AdminController extends Controller
       'size' => 'El campo :attribute tiene una longitud minima de 4 caracteres'
     ]);
 
+    $ruta = $form["image_url"]->store('public');
+    $nombreArchivo = basename($ruta);
+
     Product::create([
       'name' => $form["name"], 
-      'image_url' => $form["image_url"], 
+      'image_url' => $nombreArchivo,
       'price' => $form["price"], 
       'size' => $form["size"], 
       'category_id' => $form["category_id"], 

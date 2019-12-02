@@ -5,7 +5,6 @@
 @endsection
 
 @section('main')
-
 <!-- Formulario -->
 <div class="container">
     <div class="row">
@@ -23,7 +22,6 @@
               </div>
               <div class="form-label-group">
                 <label for="image_url">Imagen</label>
-                <input value="{{$product->image_url}}" type="text" name="image_url" class="form-control" placeholder="Imagen" required autofocus>
               </div>
               <div class="form-label-group">
                 <label for="price">Precio</label>

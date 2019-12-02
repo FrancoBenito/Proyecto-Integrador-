@@ -13,7 +13,7 @@
         <div class="card card-signin my-5">
           <div class="card-body">
           <h5 class="card-title text-center">Agregar nuevo producto</h5>
-            <form class="form-signin" action="/admin/add" method="post">
+            <form class="form-signin" action="/admin/add" method="post" enctype="multipart/form-data">
             {{csrf_field()}}
               <div class="form-label-group">
                 <label for="name">Nombre</label>
@@ -21,7 +21,7 @@
               </div>
               <div class="form-label-group">
                 <label for="image_url">Imagen</label>
-                <input value="{{old("image_url")}}" type="text" name="image_url" class="form-control" placeholder="Imagen" required autofocus>
+                <input type="file" class="form-control" name="image_url" required>
               </div>
               <div class="form-label-group">
                 <label for="price">Precio</label>
