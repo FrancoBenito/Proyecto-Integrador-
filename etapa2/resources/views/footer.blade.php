@@ -75,7 +75,7 @@
             <a href="#!">URBA</a>
           </li>
           <li>
-            <a href="#!">Promociones</a>
+            <a href="/preguntas">Preguntas Frecuentes</a>
           </li>
         </ul>
 
