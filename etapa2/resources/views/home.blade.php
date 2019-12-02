@@ -13,130 +13,30 @@
     </div>
     <section>
       <div class="card-columns">
-        <div class="card">
+    @foreach($products as $product)
+    <div class="card">
           <img
-            src="/assets/img/products/product-1.jpg"
+            src="{{$product->image_url}}"
             class="card-img-top"
-            alt="..."
+            alt="Imagen no disponible"
           />
           <div class="card-body">
             <h5 class="card-title">
-              Card title that wraps to a new line
+              {{$product -> name}}
             </h5>
             <p class="card-text">
-              This is a longer card with supporting text below as a
-              natural lead-in to additional content. This content is a
-              little bit longer.
+              ${{$product->price}}
             </p>
             <button type="button" class="btn btn-dark">
               Añadir al carrito
             </button>
           </div>
         </div>
-        <div class="card">
-          <img
-            src="/assets/img/products/product-1.jpg"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">
-              Card title that wraps to a new line
-            </h5>
-            <p class="card-text">
-              This is a longer card with supporting text below as a
-              natural lead-in to additional content. This content is a
-              little bit longer.
-            </p>
-            <button type="button" class="btn btn-dark">
-              Añadir al carrito
-            </button>
-          </div>
-        </div>
-        <div class="card">
-          <img
-            src="/assets/img/products/product-1.jpg"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">
-              Card title that wraps to a new line
-            </h5>
-            <p class="card-text">
-              This is a longer card with supporting text below as a
-              natural lead-in to additional content. This content is a
-              little bit longer.
-            </p>
-            <button type="button" class="btn btn-dark">
-              Añadir al carrito
-            </button>
-          </div>
-        </div>
-        <div class="card">
-          <img
-            src="/assets/img/products/product-1.jpg"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">
-              Card title that wraps to a new line
-            </h5>
-            <p class="card-text">
-              This is a longer card with supporting text below as a
-              natural lead-in to additional content. This content is a
-              little bit longer.
-            </p>
-            <button type="button" class="btn btn-dark">
-              Añadir al carrito
-            </button>
-          </div>
-        </div>
-        <div class="card">
-          <img
-            src="/assets/img/products/product-1.jpg"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">
-              Card title that wraps to a new line
-            </h5>
-            <p class="card-text">
-              This is a longer card with supporting text below as a
-              natural lead-in to additional content. This content is a
-              little bit longer.
-            </p>
-            <button type="button" class="btn btn-dark">
-              Añadir al carrito
-            </button>
-          </div>
-        </div>
-        <div class="card">
-          <img
-            src="/assets/img/products/product-2.jpg"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">
-              Card title that wraps to a new line
-            </h5>
-            <p class="card-text">
-              This is a longer card with supporting text below as a
-              natural lead-in to additional content. This content is a
-              little bit longer.
-            </p>
-            <button type="button" class="btn btn-dark">
-              Añadir al carrito
-            </button>
-          </div>
-        </div>
-      </div>
+    @endforeach
+    </div>
     </section>
   </div>
-</div>
+</div> 
 
 <!-- Formulario de Contacto -->
 <div class="form__container col-12 col-md-4 col-lg-6 offset-lg-3 mb-4">

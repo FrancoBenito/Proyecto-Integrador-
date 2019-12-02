@@ -11,9 +11,8 @@
 |
 */
 
-Route::get('/',function(){
-  return view('home');
-});
+
+Route::get('/', 'HomeController@index');
 
 Route::get('/login', function(){
   return view('login');
@@ -32,5 +31,19 @@ Route::get('/preguntas', function(){
 });
 
 Route::get('/carrito', function(){
-  return view('/carrito');
+  return view('carrito');
 });
+Route::put('/admin/edit/{id}', 'AdminController@update');
+
+Route::get('/admin', 'AdminController@index');
+
+Route::get('/admin/add', 'AdminController@add');
+
+Route::post('/admin/add', 'AdminController@store');
+
+
+Route::get('/admin/edit/{id}', 'AdminController@edit');
+
+
+Route::delete('/admin/edit/{id}', 'AdminController@destroy');
+

@@ -11,7 +11,7 @@
       <div class="col-md-4 mx-auto">
 
         <!-- Content -->
-        <a href="" title=" " class="logo"><img src="{{url('/images/drh_logo80.png')}}"></a>
+        <a href="/" title=" " class="logo"><img src="{{url('/images/drh_logo80.png')}}"></a>
 
       </div>
       <!-- Grid column -->

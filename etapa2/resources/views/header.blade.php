@@ -19,13 +19,13 @@
       </li>
     </ul>
 <!--   Show this only lg screens and up   -->
-    <a class="navbar-brand d-none d-lg-block" href="#"><img src="{{url('/images/drh_logo80.png')}}"></a>
+    <a class="navbar-brand d-none d-lg-block" href="/"><img src="{{url('/images/drh_logo80.png')}}"></a>
     <ul class="navbar-nav flex-fill w-100 flex-nowrap justify-content-end">
       <li class="nav-item">
-        <a class="nav-link" href="#">Login</a>
+        <a class="nav-link" href="/login">Login</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Register</a>
+        <a class="nav-link" href="/register">Register</a>
       </li>
     </ul>
   </div>
