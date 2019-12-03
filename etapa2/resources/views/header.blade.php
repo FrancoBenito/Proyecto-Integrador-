@@ -15,7 +15,7 @@
         <a class="nav-link" href="#">URBA</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Promociones</a>
+        <a class="nav-link" href="/carrito">Carrito</a>
       </li>
     </ul>
 <!--   Show this only lg screens and up   -->

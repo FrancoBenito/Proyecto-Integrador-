@@ -4,8 +4,11 @@
   Digital Rugby House - ADMIN
 @endsection
 
-@section('main')
+@section('componentcss')
+<link rel="stylesheet" href="/css/adminedit.css">
+@endsection
 
+@section('main')
 <!-- Formulario -->
 <div class="container">
     <div class="row">
@@ -23,7 +26,7 @@
               </div>
               <div class="form-label-group">
                 <label for="image_url">Imagen</label>
-                <img src="{{$product->image_url}}" width="100%"alt="">
+                <img src="{{ url('storage/'.$product->image_url) }}"  alt="">
                 <input type="file" class="form-control" name="image_url" required>
               </div>
               <div class="form-label-group">
