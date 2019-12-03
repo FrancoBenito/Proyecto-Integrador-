@@ -69,10 +69,10 @@
 
         <ul class="list-unstyled">
           <li>
-            <a href="#!">Camisetas internacionales</a>
+            <a href="/internacional">Camisetas internacionales</a>
           </li>
           <li>
-            <a href="#!">URBA</a>
+            <a href="/urba">URBA</a>
           </li>
           <li>
             <a href="/preguntas">Preguntas Frecuentes</a>

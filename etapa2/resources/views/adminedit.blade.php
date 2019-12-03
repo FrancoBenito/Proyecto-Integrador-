@@ -26,7 +26,7 @@
               </div>
               <div class="form-label-group">
                 <label for="image_url">Imagen</label>
-                <img src="{{ url('storage/'.$product->image_url) }}"  alt="">
+                <img id="img"src="{{ url('storage/'.$product->image_url) }}"  alt="">
                 <input type="file" class="form-control" name="image_url" required>
               </div>
               <div class="form-label-group">

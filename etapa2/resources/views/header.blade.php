@@ -9,13 +9,13 @@
   <div class= "collapse navbar-collapse" id="navbarToggle">
     <ul class="navbar-nav flex-fill w-100 flex-nowrap">
       <li class="nav-item">
-        <a class="nav-link active" href="#">Internacional <span class="sr-only">(current)</span></a>
+        <a class="nav-link active" href="/internacional">Internacional <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">URBA</a>
+        <a class="nav-link" href="/urba">URBA</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/carrito">Carrito</a>
+        <a class="nav-link" href="/promociones">Promociones</a>
       </li>
     </ul>
 <!--   Show this only lg screens and up   -->
@@ -26,6 +26,9 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/register">Register</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/carrito">Carrito</a>
       </li>
     </ul>
   </div>
