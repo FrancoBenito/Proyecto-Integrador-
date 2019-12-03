@@ -34,14 +34,17 @@
                 <input value="{{$product->price}}" type="number" name="price" class="form-control" placeholder="Precio" step=".01" required autofocus>
               </div>
               <div class="form-label-group">
-                <label for="size">Talle</label>
-                <select name="size" value={{$product->size}}>
-                  <option value="{{$product->size}}" selected>{{$product->size}}</option>
-                  <option value="s">S</option>
-                  <option value="m">M</option>
-                  <option value="l">L</option>
-                  <option value="xl">XL</option>
-                  <option value="xxl">XXL</option>
+                <label for="promo">Promo</label>
+                <select name="promo">
+                  <option value='1'>Si</option>
+                  <option value='0'>No</option>
+                </select>
+              </div>
+              <div class="form-label-group">
+                <label for="favorite">Destacado</label>
+                <select name="favorite">
+                  <option value='1'>Si</option>
+                  <option value='0'>No</option>
                 </select>
               </div>
               <div class="form-label-group">

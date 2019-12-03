@@ -29,11 +29,12 @@ class AdminController extends Controller
       'name' => 'required|min:4',
       'image_url' => 'required',
       'price' => 'required|min:0',
-      'size' => 'required',
+      'promo' => 'required',
+      'favorite' => 'required',
       'category_id' => 'required',
     ],[
       'required' => 'El campo :attribute es obligatorio',
-      'min' => 'El minimo del campo :attribute es de 0',
+      'min' => 'El minimo del campo :attribute es de 4',
       'max' => 'El maximo del campo :attribute es de 10',
       'size' => 'El campo :attribute tiene una longitud minima de 4 caracteres'
     ]);
@@ -45,7 +46,8 @@ class AdminController extends Controller
       'name' => $form["name"], 
       'image_url' => $nombreArchivo,
       'price' => $form["price"], 
-      'size' => $form["size"], 
+      'promo' => $form["promo"], 
+      'favorite' => $form["favorite"], 
       'category_id' => $form["category_id"], 
     ]);
 
@@ -67,7 +69,8 @@ class AdminController extends Controller
     $product -> name = $form["name"];
     $product -> image_url = $form["image_url"];
     $product -> price = $form["price"];
-    $product -> size = $form["size"];
+    $product -> promo = $form["promo"];
+    $product -> favorite = $form["favorite"];
     $product -> category_id = $form["category_id"];
     $product->save();
     return redirect('admin');

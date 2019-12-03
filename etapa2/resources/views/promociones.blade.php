@@ -35,7 +35,7 @@
     @foreach($products as $product)
       <div class="col-md-6 col-lg-6">
         <div class="product">
-          <a href="#"><img class="img-fluid" src="{{ url('storage/'.$product->image_url) }}" alt="producto">
+          <a href="{{ url('product/'.$product->id)}}"><img class="img-fluid" src="{{ url('storage/'.$product->image_url) }}" alt="producto">
           </a>
           <div class="text py-3 pb-4 px-3 text-center">
             <h3><a href="argentina.html">{{$product->name}}</a></h3>

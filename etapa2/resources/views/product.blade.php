@@ -26,8 +26,9 @@
     <div class="row">
       <div class="col-lg-6 mb-5 ">
         <a href="{{ url('storage/'.$product->image_url) }}" class="image-popup">
-          <img src="{{ url('storage/'.$product->image_url) }}" class="img-fluid" alt="producto"/>
-        </a>
+        <img src="{{ url('storage/'.$product->image_url) }}" class="img-fluid" alt="producto"/>
+        <!-- <img src="{{$product->image_url}}" class="img-fluid" alt="producto"/> -->
+      </a>
       </div>
       <div class="col-lg-6 prod-detalle pl-md-5">
         <h3 class="alt-font3">{{$product->name}}</h3>

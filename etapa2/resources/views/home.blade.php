@@ -15,11 +15,13 @@
       <div class="card-columns">
     @foreach($products as $product)
     <div class="card">
-          <img
-            src="{{$product->image_url}}"
-            class="card-img-top"
-            alt="Imagen no disponible"
-          />
+      <a href="{{ url('product/'.$product->id)}}">
+        <img
+          src="{{ url('storage/'.$product->image_url) }}"
+          class="card-img-top"
+          alt="Imagen no disponible"
+        />
+      </a>
           <div class="card-body">
             <h5 class="card-title">
               {{$product -> name}}
