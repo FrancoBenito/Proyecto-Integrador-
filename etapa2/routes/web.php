@@ -11,17 +11,6 @@
 |
 */
 
-
-Route::get('/homedev', 'HomedevsController@index');
-
-Route::get('/logindev', function(){
-  return view('logindev');
-});
-
-Route::get('/registerdev', function(){
-  return view('registerdev');
-});
-
 Route::get('/profile', function(){
   return view('profile');
 });
