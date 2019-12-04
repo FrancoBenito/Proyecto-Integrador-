@@ -1,5 +1,9 @@
 @extends('layout')
 
+@section('title')
+  Digital Rugby House
+@endsection
+
 @section('main')
 <!-- Productos Destacados -->
 <div class="container my-5 align-items-center">

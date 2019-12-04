@@ -12,14 +12,14 @@
 */
 
 
-Route::get('/', 'HomeController@index');
+Route::get('/homedev', 'HomedevsController@index');
 
-Route::get('/login', function(){
-  return view('login');
+Route::get('/logindev', function(){
+  return view('logindev');
 });
 
-Route::get('/register', function(){
-  return view('register');
+Route::get('/registerdev', function(){
+  return view('registerdev');
 });
 
 Route::get('/profile', function(){
@@ -44,7 +44,7 @@ Route::get('/product/{id}', 'ProductController@detail');
 
 Route::put('/admin/edit/{id}', 'AdminController@update');
 
-Route::get('/admin', 'AdminController@index');
+Route::get('/admin', 'AdminController@index')->middleware('admin')->name('admin');
 
 Route::get('/admin/add', 'AdminController@add');
 
@@ -54,3 +54,7 @@ Route::get('/admin/edit/{id}', 'AdminController@edit');
 
 Route::delete('/admin/edit/{id}', 'AdminController@destroy');
 
+
+Auth::routes();
+
+Route::get('/', 'HomeController@index');
