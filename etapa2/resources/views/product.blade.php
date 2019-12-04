@@ -10,7 +10,7 @@
 
 @section('main')
 <section>
-  <div class="header-img hero-bread" style="background-image: url('images/bg_2.jpg');">
+  <div class="header-img hero-bread" style="background-image: url('/images/bg_5.jpg');">
     <div class="container">
     <div class="row no-gutters slider-text align-items-center justify-content-center">
       <div class="col-md-9 text-center">
