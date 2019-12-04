@@ -7,6 +7,13 @@
   <link rel="stylesheet" href="/css/app.css">
   @yield('componentcss')
 
+  <!-- favicon -->
+        <link rel="/" href="{{url('/images/favicon.png')}}">
+        <link rel="apple-touch-icon" href="{{url('/images/apple-touch-icon-57x57.png')}}">
+        <link rel="apple-touch-icon" sizes="72x72" href="{{url('/images/apple-touch-icon-72x72.png')}}">
+        <link rel="apple-touch-icon" sizes="114x114" href="{{url('/images/apple-touch-icon-114x114.png')}}">
+
+
   <!-- Scripts -->
   <script src="{{ asset('js/app.js') }}" defer></script>
 
