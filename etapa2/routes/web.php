@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/profile', function(){
-  return view('profile');
-});
+Route::get('/profile', 'ProfileController@data')->name('profile');
+
+Route::post('/profile', 'ProfileController@update');
 
 Route::get('/preguntas', function(){
   return view('preguntas');

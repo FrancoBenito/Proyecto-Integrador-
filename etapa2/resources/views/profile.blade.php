@@ -6,46 +6,67 @@
 @endsection
 
 @section('componentcss')
-<link rel="stylesheet" href="/css/profile.css">
+<!-- <link rel="stylesheet" href="/css/profile.css"> -->
 @endsection
 
 @section('main')
-<section>
-      <div class="container">
-          <div class="row">
-              <!-- start column -->
-              <div class="col-md-4 col-sm-12 bg-white">
-                <div id="foto" class="foto padding-40px-all alt-font">
-                  <img src="assets/img/perfil.jpg" alt="foto">
-                    <p style="margin-top: 20px;"><a href="#">MODIFICAR</a></p>
-                </div>
-              </div>
-              <!-- end column -->
-              <!-- start column -->
-              <div class="col-md-8 col-sm-12 profile-imput padding-40px-all">
-                <!-- imput -->
-                <div class="bg-white padding-20px-all  ">
-                  <h6 class="alt-font font-weight-300">NOMBRE: <strong>JUAN PEREZ</strong></h6>
-                </div>
-                <!-- imput -->
-                <div class="bg-white padding-20px-all  margin-five-top">
-                  <h6 class="alt-font font-weight-300">DIRECCION: <strong>PAEZ 345 - CABA</strong></h6>
-                </div>
-                <!-- imput -->
-                <div class="bg-white padding-20px-all   margin-five-top">
-                  <h6 class="alt-font font-weight-300">EMAIL: <strong>JUAN@PEREZ.COM</strong></h6>
-                </div>
-                <!-- imput -->
-                <div class="bg-white padding-20px-all   margin-five-top">
-                  <h6 class="alt-font font-weight-300">CONTRASEÑA: <strong>**********</strong></h6>
-                </div>
-                <!-- imput -->
-                <div class="margin-five-top">
-                  <a class="btn btn-large btn-transparent-black btn-rounded lg-margin-15px-bottom " href="#">EDITAR PERFIL</a>
-                </div>
-              </div>
-          </div>
+<div class="container">
+    <h1>Editar Perfil</h1>
+  	<hr>
+	<div class="row">
+      <!-- left column -->
+      <div class="col-md-3">
+        <div class="text-center">
+          <img src="/storage/{{Auth::user()->avatar}}" class="avatar img-circle" alt="avatar">
+          <!-- <h6>Upload a different photo...</h6>
+          
+          <input type="file" class="form-control"> -->
+        </div>
       </div>
-    </section>
+      
+      <!-- edit form column -->
+      <div class="col-md-9 personal-info">
+
+        <h3>Tu información</h3>
+
+        <form class="form-horizontal" role="form" method="post" action="/profile">
+        {{csrf_field()}}
+          <div class="form-group">
+            <label for="name"class="col-md-3 control-label">Nombre de usuario:</label>
+            <div class="col-md-8">
+              <input name="name" id="name" class="form-control" type="text" value="{{$user["name"]}}">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email" class="col-lg-3 control-label">Email:</label>
+            <div class="col-lg-8">
+              <input name="email" id="email" class="form-control" type="text" value="{{$user["email"]}}">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="password" class="col-md-3 control-label">Password:</label>
+            <div class="col-md-8">
+              <input name="password" id="password" class="form-control" type="password" value="{{$user["password"]}}">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="password-confirm" class="col-md-3 control-label">Confirm password:</label>
+            <div class="col-md-8">
+              <input name="password_confirmation" id="password-confirm" class="form-control" type="password" value="{{$user["password"]}}">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 control-label"></label>
+            <div class="col-md-8">
+              <input type="submit" class="btn btn-primary" value="Save Changes">
+              <span></span>
+              <input type="reset" class="btn btn-default" value="Cancel">
+            </div>
+          </div>
+        </form>
+      </div>
+  </div>
+</div>
+<hr>
 
 @endsection

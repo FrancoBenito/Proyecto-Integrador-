@@ -11,7 +11,7 @@
           </div>
           <div class="card-body">
             <h5 class="card-title text-center">Register</h5>
-            <form class="form-signin" method="POST" action="{{ route('register') }}">
+            <form class="form-signin" method="POST" action="{{ route('register') }}"enctype="multipart/form-data">
             @csrf
 
               <div class="form-label-group">
@@ -49,6 +49,13 @@
               <div class="form-label-group">
                 <input autocomplete="new-password" name="password_confirmation" type="password" id="password-confirm" class="form-control" placeholder="Contraseñar" required>
                 <label for="password-confirm"">Confirmar contraseña</label>
+              </div>
+
+              <div class="form-group row">
+                <label for="avatar" class="col-md-4 col-form-label text-md-right">Avatar</label>
+                <div class="col-md-6">
+                    <input id="avatar" type="file" class="form-control" name="avatar" required>
+                </div>
               </div>
 
               <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Register</button>
