@@ -2,7 +2,7 @@
 
 
 @section('title')
-  Digital Rugby House
+  Digital Rugby House - Mi perfil
 @endsection
 
 @section('componentcss')

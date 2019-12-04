@@ -1,7 +1,7 @@
 @extends('layouts.layout')
 
 @section('title')
-  Digital Rugby House - Internacional
+  Digital Rugby House - Promociones
 @endsection
 
 @section('componentcss')

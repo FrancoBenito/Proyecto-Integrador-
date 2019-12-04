@@ -1,7 +1,7 @@
 @extends('layouts.layout')
 
 @section('title')
-  Digital Rugby House - ADMIN
+  Digital Rugby House - Admin
 @endsection
 
 @section('componentcss')

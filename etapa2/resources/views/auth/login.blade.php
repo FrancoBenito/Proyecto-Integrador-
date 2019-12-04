@@ -1,5 +1,9 @@
 @extends('layouts.layout')
 
+@section('title')
+  Digital Rugby House - Login
+@endsection
+
 @section('main')
 <div class="container">
   <div class="row">
