@@ -39,9 +39,17 @@
           </div>
         </div>
         <br />
-        <p>
-          <a href="#" class="btn btn-black py-3 px-5">Agregar al carrito</a>
-        </p>
+        <form action="/" method="post">
+            {{csrf_field()}}
+            @auth
+            <input type="hidden" name="user_id" value="{{ Auth::user()->id }}">
+            <input type="hidden" name="product_id" value="{{$product -> id}}">
+            <input type="hidden" name="product_price" value="{{$product -> price}}">
+            <input type="hidden" name="product_name" value="{{$product -> name}}">
+            <button type="submit" class="btn btn-dark">
+              Añadir al carrito
+            </button>
+            @endauth
       </div>
     </div>
   </div>
