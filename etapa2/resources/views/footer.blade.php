@@ -9,7 +9,7 @@
 
       <!-- Grid column -->
       <div class="col-md-2">
-        <div class=" mt-3"><a href="/" title=" " class="logo"><img src="{{url('/images/drh_logo80.png')}}"></a>
+        <div class=" mt-3 text-center"><a href="/" title=" " class="logo"><img src="{{url('/images/drh_logo80.png')}}"></a>
         </div>
       </div>
 

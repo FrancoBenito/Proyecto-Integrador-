@@ -4,13 +4,17 @@
   Digital Rugby House - Carrito
 @endsection
 
+@section('componentcss')
+<link rel="stylesheet" href="/css/product.css">
+@endsection
+
 @section('main')
 
 <div class="container mb-4">
     <div class="row">
         <div class="col-12">
             <div class="table-responsive">
-                <table class="table table-striped">
+                <table class="table table-striped alt-fontt">
                     <thead>
                         <tr>
                             <th scope="col"> </th>
@@ -76,11 +80,11 @@
         </div>
         <div class="col mb-2">
             <div class="row">
-                <div class="col-sm-12  col-md-6">
+                <div class="col-sm-12  col-md-6 alt-fontt">
                     <button class="btn btn-block btn-light">Continuar comprando</button>
                 </div>
                 <div class="col-sm-12 col-md-6 text-right">
-                    <button class="btn btn-lg btn-block btn-success text-uppercase">Comprar</button>
+                    <button class="btn btn-lg btn-block btn-success text-uppercase footer-title-font">Comprar</button>
                 </div>
             </div>
         </div>

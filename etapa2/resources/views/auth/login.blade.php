@@ -4,6 +4,10 @@
   Digital Rugby House - Login
 @endsection
 
+@section('componentcss')
+<link rel="stylesheet" href="/css/product.css">
+@endsection
+
 @section('main')
 <div class="container">
   <div class="row">
