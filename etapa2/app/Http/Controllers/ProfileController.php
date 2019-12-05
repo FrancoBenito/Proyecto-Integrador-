@@ -21,12 +21,13 @@ class ProfileController extends Controller
     }
 
     public function update(Request $form){
+
+      // {{dd($form);}}
       $this->validate(request(), [
           'name' => 'required',
-          'email' => 'required|email|unique:users',
+          'email' => 'required|email',
           'password' => 'required|min:6|confirmed'
       ]);
-
       $user = Auth::user();
       $user->name = $form['name'];
       $user->email = $form['email'];

@@ -59,9 +59,11 @@
           </div>
       </li>
   @endguest
+      @auth
       <li class="nav-item">
         <a class="nav-link alt-font" href="/carrito">Carrito</a>
       </li>
+      @endauth
     </ul>
   </div>
 </div>

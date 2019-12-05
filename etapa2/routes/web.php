@@ -11,20 +11,11 @@
 |
 */
 
-Route::get('/profile', 'ProfileController@data')->name('profile');
+Auth::routes();
 
-Route::post('/profile', 'ProfileController@update');
+Route::get('/', 'HomeController@index');
 
-Route::get('/preguntas', function(){
-  return view('preguntas');
-});
-
-Route::get('/carrito', 'CarritoController@showAll');
-
-Route::delete('/carrito', 'CarritoController@buy');
-
-Route::post('/carrito', 'CarritoController@deleteProduct');
-
+Route::post('/', 'CarritoController@addToCarrito');
 
 Route::get('/internacional', 'ProductController@internacional');
 
@@ -33,6 +24,20 @@ Route::get('/urba', 'ProductController@urba');
 Route::get('/promociones', 'ProductController@promociones');
 
 Route::get('/product/{id}', 'ProductController@detail');
+
+Route::get('/profile', 'ProfileController@data')->name('profile');
+
+Route::post('/profile', 'ProfileController@update');
+
+Route::get('/carrito', 'CarritoController@showAll');
+
+Route::delete('/carrito', 'CarritoController@buy');
+
+Route::post('/carrito', 'CarritoController@deleteProduct');
+
+Route::get('/preguntas', function(){
+  return view('preguntas');
+});
 
 Route::put('/admin/edit/{id}', 'AdminController@update');
 
@@ -47,8 +52,7 @@ Route::get('/admin/edit/{id}', 'AdminController@edit');
 Route::delete('/admin/edit/{id}', 'AdminController@destroy');
 
 
-Auth::routes();
 
-Route::get('/', 'HomeController@index');
 
-Route::post('/', 'CarritoController@addToCarrito');
+
+
