@@ -9,13 +9,13 @@
   <div class= "collapse navbar-collapse" id="navbarToggle">
     <ul class="navbar-nav flex-fill w-100 flex-nowrap">
       <li class="nav-item">
-        <a class="nav-link active" href="/internacional">Internacional <span class="sr-only">(current)</span></a>
+        <a class="nav-link active alt-font" href="/internacional">Internacional <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/urba">URBA</a>
+        <a class="nav-link alt-font" href="/urba">URBA</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/promociones">Promociones</a>
+        <a class="nav-link alt-font" href="/promociones">Promociones</a>
       </li>
     </ul>
 <!--   Show this only lg screens and up   -->
@@ -23,20 +23,20 @@
     <ul class="navbar-nav flex-fill w-100 flex-nowrap justify-content-end">
       @guest
       <li class="nav-item">
-          <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+          <a class="nav-link alt-font" href="{{ route('login') }}">{{ __('Login') }}</a>
       </li>
       @if (Route::has('register'))
           <li class="nav-item">
-              <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+              <a class="nav-link alt-font" href="{{ route('register') }}">{{ __('Register') }}</a>
           </li>
       @endif
       @else
       <li class="nav-item dropdown">
-          <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+          <a id="navbarDropdown" class="nav-link dropdown-toggle alt-font" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
               {{ Auth::user()->name }} <span class="caret"></span>
           </a>
 
-          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+          <div class="dropdown-menu dropdown-menu-right alt-font" aria-labelledby="navbarDropdown">
                 @if (Auth::user()->isAdmin())
                   <a class="dropdown-item" href="{{ route('admin') }}">
                       Admin
@@ -60,7 +60,7 @@
       </li>
   @endguest
       <li class="nav-item">
-        <a class="nav-link" href="/carrito">Carrito</a>
+        <a class="nav-link alt-font" href="/carrito">Carrito</a>
       </li>
     </ul>
   </div>

@@ -1,50 +1,44 @@
 <!-- Footer -->
-<footer class="page-footer font-small bg-dark text-light pt-4">
+<footer id= "id" class="text-light pt-4">
 
   <!-- Footer Links -->
-  <div class="container text-center text-md-left">
+  <div class="container">
 
     <!-- Grid row -->
     <div class="row">
 
       <!-- Grid column -->
-      <div class="col-md-4 mx-auto">
-
-        <!-- Content -->
-        <a href="/" title=" " class="logo"><img src="{{url('/images/drh_logo80.png')}}"></a>
-
+      <div class="col-md-2">
+        <div class=" mt-3"><a href="/" title=" " class="logo"><img src="{{url('/images/drh_logo80.png')}}"></a>
+        </div>
       </div>
-      <!-- Grid column -->
+
 
       <hr class="clearfix w-100 d-md-none">
+      <div class="col-md-4 mx-auto">
+        <h5 class="footer-title-font text-uppercase mt-3 mb-2">Dirección</h5>
 
-      <!-- Grid column -->
-      <div class="col-md-2 mx-auto">
-
-        <!-- Links -->
-        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Dirección</h5>
-
-        <ul class="list-unstyled">
+        <ul class="list-unstyled footer-text-font mt-0">
           <li>
-            <p href="#!">Av. de los lagos 6800</p>
+            <p href="#!">Av. de los Lagos 6800</p>
           </li>
           <li>
             <p href="#!">Nordelta, Pcia. de Bs As</p>
           </li>
+          <li>
+            <p href="#!">Argentina</p>
+          </li>
         </ul>
 
       </div>
-      <!-- Grid column -->
 
-      <hr class="clearfix w-100 d-md-none">
+     
 
-      <!-- Grid column -->
-      <div class="col-md-2 mx-auto">
+      <div class="col-md-4 mx-auto">
 
-        <!-- Links -->
-        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Contacto</h5>
+        <h5 class="footer-title-font text-uppercase mt-3 mb-2">Contacto</h5>
 
-        <ul class="list-unstyled">
+        <ul class="list-unstyled footer-text-font">
           <li>
             <p href="#!">Email: info@drh.com</p>
           </li>
@@ -55,24 +49,20 @@
             <p href="#!">Fax: +54 (11) 000 0000 001</p>
           </li>
         </ul>
-
       </div>
-      <!-- Grid column -->
-
       <hr class="clearfix w-100 d-md-none">
-
-      <!-- Grid column -->
       <div class="col-md-2 mx-auto">
+        <h5 class="footer-title-font text-uppercase mt-3 mb-0">Links</h5>
 
-        <!-- Links -->
-        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
-
-        <ul class="list-unstyled">
+        <ul  id= "links" class="list-unstyled footer-text-font">
           <li>
-            <a href="/internacional">Camisetas internacionales</a>
+            <a href="/internacional">Internacionales</a>
           </li>
           <li>
             <a href="/urba">URBA</a>
+          </li>
+          <li>
+            <a href="/urba">Promociones</a>
           </li>
           <li>
             <a href="/preguntas">Preguntas Frecuentes</a>
@@ -80,19 +70,12 @@
         </ul>
 
       </div>
-      <!-- Grid column -->
-
     </div>
-    <!-- Grid row -->
-
   </div>
-  <!-- Footer Links -->
-
-
-
+<hr class="hr mt-5">
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2018 Copyright:
-    <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+  <div class="footer-copyright text-center mt-5 py-3">© 2019 Copyright - 
+    <a href="/"> Digital Rugby House</a>
   </div>
   <!-- Copyright -->
 
