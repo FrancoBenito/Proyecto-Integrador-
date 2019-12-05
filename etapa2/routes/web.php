@@ -19,9 +19,12 @@ Route::get('/preguntas', function(){
   return view('preguntas');
 });
 
-Route::get('/carrito', function(){
-  return view('carrito');
-});
+Route::get('/carrito', 'CarritoController@showAll');
+
+Route::delete('/carrito', 'CarritoController@buy');
+
+Route::post('/carrito', 'CarritoController@deleteProduct');
+
 
 Route::get('/internacional', 'ProductController@internacional');
 
@@ -47,3 +50,5 @@ Route::delete('/admin/edit/{id}', 'AdminController@destroy');
 Auth::routes();
 
 Route::get('/', 'HomeController@index');
+
+Route::post('/', 'CarritoController@addToCarrito');

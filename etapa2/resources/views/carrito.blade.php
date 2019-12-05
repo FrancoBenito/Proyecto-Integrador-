@@ -15,77 +15,45 @@
         <div class="col-12">
             <div class="table-responsive">
                 <table class="table table-striped alt-fontt">
-                    <thead>
-                        <tr>
-                            <th scope="col"> </th>
-                            <th scope="col">Producto</th>
-                            <th scope="col">Disponibilidad</th>
-                            <th scope="col" class="text-center">Cantidad</th>
-                            <th scope="col" class="text-right">Precio</th>
-                            <th> </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><img src="https://dummyimage.com/50x50/55595c/fff" /> </td>
-                            <td>Product Name Dada</td>
-                            <td>In stock</td>
-                            <td><input class="form-control" type="text" value="1" /></td>
-                            <td class="text-right">124,90 €</td>
-                            <td class="text-right"><button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </button> </td>
-                        </tr>
-                        <tr>
-                            <td><img src="https://dummyimage.com/50x50/55595c/fff" /> </td>
-                            <td>Product Name Toto</td>
-                            <td>In stock</td>
-                            <td><input class="form-control" type="text" value="1" /></td>
-                            <td class="text-right">33,90 €</td>
-                            <td class="text-right"><button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </button> </td>
-                        </tr>
-                        <tr>
-                            <td><img src="https://dummyimage.com/50x50/55595c/fff" /> </td>
-                            <td>Product Name Titi</td>
-                            <td>In stock</td>
-                            <td><input class="form-control" type="text" value="1" /></td>
-                            <td class="text-right">70,00 €</td>
-                            <td class="text-right"><button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </button> </td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>Sub-Total</td>
-                            <td class="text-right">255,90 €</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>Envio</td>
-                            <td class="text-right">6,90 €</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td><strong>Total</strong></td>
-                            <td class="text-right"><strong>346,90 €</strong></td>
-                        </tr>
-                    </tbody>
+                  <thead>
+                    <tr>
+                      <th scope="col">Producto</th>
+                      <th scope="col">Precio</th>
+                      <th scope="col">Eliminar</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    @foreach ($carrito as $item)
+                    <tr>
+                      <td>{{$item->product_name}}</td>
+                      <td>{{$item->product_price}}</td>
+                      <td>
+                        <form action="/carrito" method="post">
+                        {{csrf_field()}}
+                        <input type="hidden" name="id" value="{{{$item->id}}}">
+                          <button type="submit">Eliminar</button>
+                        </form>
+                      </td>
+                    </tr>
+                    @endforeach
+                  </tbody>
                 </table>
             </div>
         </div>
         <div class="col mb-2">
             <div class="row">
                 <div class="col-sm-12  col-md-6 alt-fontt">
+                <form action="/" method="get">
                     <button class="btn btn-block btn-light">Continuar comprando</button>
+                </form>
                 </div>
+                <form action="/carrito" method="post">
+                {{csrf_field()}}
+                {{ method_field('DELETE') }}
                 <div class="col-sm-12 col-md-6 text-right">
                     <button class="btn btn-lg btn-block btn-success text-uppercase footer-title-font">Comprar</button>
                 </div>
+                </form>
             </div>
         </div>
     </div>
