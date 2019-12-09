@@ -23,7 +23,11 @@ Route::get('/urba', 'ProductController@urba');
 
 Route::get('/promociones', 'ProductController@promociones');
 
+Route::get('/compras', 'ProductController@compras');
+
 Route::get('/product/{id}', 'ProductController@detail');
+
+Route::post('/product/{id}', 'CarritoController@addToCarrito');
 
 Route::get('/profile', 'ProfileController@data')->name('profile');
 
@@ -39,6 +43,11 @@ Route::get('/preguntas', function(){
   return view('preguntas');
 });
 
+Route::get('/contact', function(){
+  return view('contact');
+});
+
+
 Route::put('/admin/edit/{id}', 'AdminController@update');
 
 Route::get('/admin', 'AdminController@index')->middleware('admin')->name('admin');
@@ -51,13 +60,7 @@ Route::get('/admin/edit/{id}', 'AdminController@edit');
 
 Route::delete('/admin/edit/{id}', 'AdminController@destroy');
 
-Route::get('/compras', function(){
-  return view('compras');
-});
 
-Route::get('/contact', function(){
-  return view('contact');
-});
 
 
 

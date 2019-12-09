@@ -39,7 +39,7 @@
           </div>
         </div>
         <br />
-        <form action="/" method="post">
+        <form action="{{ url('product/'.$product->id)}}" method="post">
             {{csrf_field()}}
             @auth
             <input type="hidden" name="user_id" value="{{ Auth::user()->id }}">

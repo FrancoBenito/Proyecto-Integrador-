@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Product;
 use App\Carrito;
+use App\Compra;
 use Illuminate\Support\Facades\Auth;
 
 class CarritoController extends Controller
@@ -17,7 +18,7 @@ class CarritoController extends Controller
       'product_name' => $form["product_name"],
     ]);
 
-    return redirect('/');
+    return redirect('/carrito');
   }
 
   public function showAll(){
@@ -31,6 +32,19 @@ class CarritoController extends Controller
 
   public function buy(){
     $userID = Auth::user()->id;
+
+    $compras = Carrito::where('user_id','=',$userID)->get();
+    $subset = $compras->map->only(['user_id', 'product_id', 'product_price','product_name']);
+
+    foreach($subset as $elemento){
+      Compra::create([
+        'user_id' => $elemento["user_id"],
+        'product_id' => $elemento["product_id"],
+        'product_price' => $elemento["product_price"],
+        'product_name' => $elemento["product_name"],
+      ]);
+
+    }
 
     $carrito = Carrito::where('user_id','=',$userID);
     $carrito->delete();
