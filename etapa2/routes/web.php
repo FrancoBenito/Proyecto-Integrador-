@@ -51,6 +51,13 @@ Route::get('/admin/edit/{id}', 'AdminController@edit');
 
 Route::delete('/admin/edit/{id}', 'AdminController@destroy');
 
+Route::get('/compras', function(){
+  return view('compras');
+});
+
+Route::get('/contact', function(){
+  return view('contact');
+});
 
 
 

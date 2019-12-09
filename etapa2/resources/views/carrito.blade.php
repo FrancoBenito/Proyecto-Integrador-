@@ -10,6 +10,19 @@
 
 @section('main')
 
+<section>
+  <div class="header-img hero-bread" style="background-image: url('images/bg_carrito.jpg');">
+    <div class="container">
+    <div class="row no-gutters slider-text align-items-center justify-content-center">
+      <div class="col-md-9 text-center">
+        <p class="breadcrumbs alt-font"><span class="mr-2"></span></p>
+      <h1 class="mb-0 bread alt-font0">carrito</h1>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+
 <div class="container mb-4 mt-5">
     <div class="row">
         <div class="col-12">

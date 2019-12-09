@@ -23,7 +23,7 @@
         <div class="text-center">
           <img class="img-size mt-4 mb-5" src="/storage/{{Auth::user()->avatar}}" class="avatar img-circle" alt="avatar">
         <div class="mt-1 mb-5">
-              <a class="btn btn-black" href="contact.html">TUS COMPRAS</a>
+              <a class="btn btn-black" href="compras">TUS COMPRAS</a>
               </div>
               <hr size=20 color="#ed1164">
           <!-- <h6>Upload a different photo...</h6>

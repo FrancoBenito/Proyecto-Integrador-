@@ -65,49 +65,19 @@
 </div> 
 
 
-     <!-- highlight section -->
+
      <section id="altura">
             <div  class="container">
                 <div class="row">
                     <div class="text-center col-12 mb-5">
                         <h6 class="footer-title-font text-uppercase mt-5">Si tenes dudas o buscás algo especial, escribinos.<br>Estamos para ayudarte.</h6><br>
-                        <a class="text-center btn btn-outline-light" href="contact.html">Consulta</a>
+                        <a class="text-center btn btn-outline-light" href="/contact">Consulta</a>
 
                   
                     </div>    
                 </div>
             </div>
         </section>
-        <!-- end highlight section -->
 
 
-<!-- Formulario de Contacto 
-<div class="form__container col-12 col-md-4 col-lg-6 offset-lg-3 mb-4">
-  <div class="text-center col-12 mb-5 alt-font22">
-    <h6>Dejanos tu comentario!</h6>
-  </div>
-  <div class="form bg-light">
-    <form>
-      <div class="form-group">
-        <label for="formName">Nombre</label>
-        <input type="text" class="form-control" id="formName" />
-      </div>
-      <div class="form-group">
-        <label for="formEmail">Email</label>
-        <input type="email" class="form-control" id="formEmail" />
-      </div>
-      <div class="form-group">
-        <label for="formTextArea">Mensaje</label>
-        <textarea
-          class="form-control"
-          id="formTextArea"
-          rows="3"
-        ></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary mb-2">
-        Enviar
-      </button>
-    </form>
-  </div>
-</div>-->
 @endsection

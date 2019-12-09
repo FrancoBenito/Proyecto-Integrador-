@@ -894,11 +894,6 @@ footer p {
     line-height: 80%;
 }
 
-@media (max-width: 767.98px) {
-    footer, h5, h4, #links {
-        text-align: center; 
-    }
-}
 
 footer ul li {
 
@@ -911,9 +906,21 @@ footer ul li {
     -moz-column-count: 3;
     column-count: 3;
     list-style: none;
-    margin: 42px;
-    font-size: 20px;
+    margin-top: 42px;
+    margin-bottom: 22px;
+    font-size: 14px;
+    font-family: 'montserrat';
+    font-weight: 300;
+    text-align: left;}
+
+#products a {
+  color: #7c7c7c;
 }
+
+#products a:hover {
+    color: #ed1164;
+  }
+  
 
 
 #img {
@@ -929,4 +936,22 @@ footer ul li {
 
 .img-size{
     width: 200px;
+}
+
+@media (max-width: 767.98px) {
+    footer, h5, h4, #links {
+        text-align: center; 
+    }
+    
+    #products {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+        list-style: none;
+        margin-top: 42px;
+        margin-bottom: 22px;
+        font-size: 14px;
+        font-family: 'montserrat';
+        font-weight: 300;
+        text-align: left ;}
 }
