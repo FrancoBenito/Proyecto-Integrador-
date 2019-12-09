@@ -14,13 +14,13 @@
     <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
       <div class="card card-signin my-5">
         <div class="card-body">
-          <h5 class="card-title text-center">Login</h5>
+          <h5 class="card-title text-center alt-fontt">Login</h5>
           <form class="form-signin" action="{{ route('login') }}" method="post">
           @csrf
 
-            <div class="form-label-group">
+            <div class="form-label-group alt-fontt mt-5">
               <input type="email" id="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" autocomplete="email" placeholder="Email address" required autofocus>
-              <label for="inputEmail">Email</label>
+              <label class="mt-3" for="inputEmail">Email</label>
               @error('email')
               <span class="invalid-feedback" role="alert">
                   <strong>{{ $message }}</strong>
@@ -30,7 +30,7 @@
 
             <div class="form-label-group">
               <input type="password" id="password" class="form-control @error('password') is-invalid @enderror" autocomplete="current-password" name="password" placeholder="Password" required>
-              <label for="inputPassword">Contraseña</label>
+              <label class="mt-3" for="inputPassword">Contraseña</label>
             @error('password')
             <span class="invalid-feedback" role="alert">
                 <strong>{{ $message }}</strong>

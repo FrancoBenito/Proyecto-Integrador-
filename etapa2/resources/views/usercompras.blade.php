@@ -1,7 +1,7 @@
 @extends('layouts.layout')
 
 @section('title')
-  Digital Rugby House - Carrito
+  Digital Rugby House - Tus compras
 @endsection
 
 @section('componentcss')
@@ -17,11 +17,12 @@
                 <table class="table table-striped alt-fontt">
                   <thead>
                     <tr>
+                      <th scope="col">Fecha</th>
                       <th scope="col">Producto</th>
                       <th scope="col">Precio</th>
-                      <th scope="col">Eliminar</th>
                     </tr>
                   </thead>
+                  <!--  
                   <tbody>
                     @foreach ($carrito as $item)
                     <tr>
@@ -37,6 +38,7 @@
                     </tr>
                     @endforeach
                   </tbody>
+                  -->
                 </table>
             </div>
         </div>
@@ -47,13 +49,6 @@
                     <button class="btn btn-black">Continuar comprando</button>
                 </form>
                 </div>
-                <form action="/carrito" method="post">
-                {{csrf_field()}}
-                {{ method_field('DELETE') }}
-                <div class="col-sm-12 col-md-6 alt-fontt">
-                    <button class="btn btn-black">Comprar</button>
-                </div>
-                </form>
             </div>
         </div>
     </div>

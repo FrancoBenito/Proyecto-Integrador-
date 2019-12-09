@@ -1,7 +1,7 @@
 @extends('layouts.layout')
 
 @section('title')
-  Digital Rugby House - Register
+  Digital Rugby House - Registro
 @endsection
 
 @section('componentcss')
@@ -11,19 +11,16 @@
 @section('main')
 <div class="container">
     <div class="row">
-      <div class="col-lg-10 col-xl-4 mx-auto">
-        <div class="card card-signin flex-row my-5">
-          <div class="card-img-left d-none d-md-flex">
-             <!-- Background image for card set in CSS! -->
-          </div>
+      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+        <div class="card card-signin my-5">
           <div class="card-body">
-            <h5 class="card-title text-center">Register</h5>
+            <h5 class="card-title text-center alt-fontt">Registro</h5>
             <form class="form-signin" method="POST" action="{{ route('register') }}"enctype="multipart/form-data">
             @csrf
 
-              <div class="form-label-group">
+            <div class="form-label-group alt-fontt mt-5">
                 <input value="{{ old('name') }}" name="name" type="text" id="name" class="form-control @error('name') is-invalid @enderror" autocomplete="name" placeholder="Usuario" required autofocus>
-                <label for="name">Usuario</label>
+                <label class="mt-1" for="name">Usuario</label>
                 @error('name')
                 <span class="invalid-feedback" role="alert">
                   <strong>{{ $message }}</strong>
@@ -31,9 +28,9 @@
                 @enderror
               </div>
 
-              <div class="form-label-group">
+              <div class="form-label-group mt-3">
                 <input type="email" id="email" class="form-control @error('email') is-invalid @enderror" placeholder="Email" name="email" value="{{ old('email') }}" autocomplete="email" required>
-                <label for="email">Email</label>
+                <label class="mt-1" for="email">Email</label>
                 @error('email')
                 <span class="invalid-feedback" role="alert">
                   <strong>{{ $message }}</strong>
@@ -41,11 +38,9 @@
                 @enderror
               </div>
 
-              <hr>
-
-              <div class="form-label-group">
+              <div class="form-label-group mt-4">
                 <input type="password" id="password" class="form-control @error('password') is-invalid @enderror" placeholder="Contraseña" name="password"  autocomplete="new-password" required>
-                <label for="password">Contraseña</label>
+                <label class="mt-1" for="password">Contraseña</label>
                 @error('password')
                 <span class="invalid-feedback" role="alert">
                   <strong>{{ $message }}</strong>
@@ -53,19 +48,20 @@
                 @enderror
               </div>
 
-              <div class="form-label-group">
+              <div class="form-label-group mt-3">
                 <input autocomplete="new-password" name="password_confirmation" type="password" id="password-confirm" class="form-control" placeholder="Contraseñar" required>
-                <label for="password-confirm"">Confirmar contraseña</label>
+                <label class="mt-1" for="password-confirm">Confirmar contraseña</label>
               </div>
 
-              <div class="form-group row">
-                <label for="avatar" class="col-md-4 col-form-label text-md-right">Avatar</label>
-                <div class="col-md-6">
+
+              <div class="form-group row mt-4">
+                <div class="col-md-12">
                     <input id="avatar" type="file" class="form-control" name="avatar" required>
+                    <label class="mt-1" for="avatar">Avatar</label>
                 </div>
               </div>
 
-              <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Register</button>
+              <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Registro</button>
 
             </form>
           </div>

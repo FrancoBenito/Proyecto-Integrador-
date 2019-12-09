@@ -1,5 +1,5 @@
 <!-- Footer -->
-<footer id= "id" class="text-light pt-4">
+<footer id= "id" class="text-light pt-4 sticky-bottom">
 
   <!-- Footer Links -->
   <div class="container">

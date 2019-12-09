@@ -46,7 +46,7 @@
             <input type="hidden" name="product_id" value="{{$product -> id}}">
             <input type="hidden" name="product_price" value="{{$product -> price}}">
             <input type="hidden" name="product_name" value="{{$product -> name}}">
-            <button type="submit" class="btn btn-dark">
+            <button type="submit" class="btn btn-black">
               Añadir al carrito
             </button>
             @endauth

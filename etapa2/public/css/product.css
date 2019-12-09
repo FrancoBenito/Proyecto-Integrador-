@@ -57,6 +57,14 @@
 
 }
 
+.button-text-font {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 15px;
+
+}
+
 
 
 
@@ -174,6 +182,9 @@ hr {
     border: 0;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
+
+
+
 
 .img-fluid {
     max-width: 100%;
@@ -705,6 +716,8 @@ h6 {
         letter-spacing: 3px;
         text-transform: uppercase;
     }
+
+
 }
 
 .header-img.hero-bread {
@@ -712,7 +725,7 @@ h6 {
 }
 
 .btn {
-    border-radius: 30px;
+    border-radius: 10px;
 }
 
 .btn.btn-black {
@@ -727,9 +740,9 @@ h6 {
 }
 
 .product .text h3 {
-    font-size: 14px;
+    font-size: 24px;
     margin-bottom: 5px;
-    font-weight: 300;
+    font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-family: "Montserrat", Arial, sans-serif;
@@ -760,7 +773,7 @@ h6 {
     margin-bottom: 0;
     color: #ed1164;
     font-weight: 400;
-    font-size: 36px;
+    font-size: 26px;
 }
 
 .product .text p.precio {
@@ -873,6 +886,7 @@ footer .hr {
 #id {
 background-color: #001b50;
 
+
 }
 
 footer p {
@@ -881,7 +895,7 @@ footer p {
 }
 
 @media (max-width: 767.98px) {
-    footer h5, #links {
+    footer, h5, h4, #links {
         text-align: center; 
     }
 }
@@ -889,4 +903,30 @@ footer p {
 footer ul li {
 
     line-height: 200%;
+}
+
+
+#products {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    list-style: none;
+    margin: 42px;
+    font-size: 20px;
+}
+
+
+#img {
+    display: block;
+    width: 20%;
+    height: auto;
+}
+
+#altura{
+    height: 200px;
+    background: #ed1164;
+}
+
+.img-size{
+    width: 200px;
 }

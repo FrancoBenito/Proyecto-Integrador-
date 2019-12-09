@@ -38,10 +38,22 @@
           <a href="{{ url('product/'.$product->id)}}"><img class="img-fluid" src="{{ url('storage/'.$product->image_url) }}" alt="producto">
           </a>
           <div class="text py-3 pb-4 px-3 text-center">
-            <h3><a href="argentina.html">{{$product->name}}</a></h3>
+            <h3>{{$product->name}}</h3>
             <div class="d-flex">
               <div class="pricing">
                 <p class="precio"><span>${{$product->price}}</span></p>
+                <form action="/" method="post">
+            {{csrf_field()}}
+            @auth
+            <input type="hidden" name="user_id" value="{{ Auth::user()->id }}">
+            <input type="hidden" name="product_id" value="{{$product -> id}}">
+            <input type="hidden" name="product_price" value="{{$product -> price}}">
+            <input type="hidden" name="product_name" value="{{$product -> name}}">
+            <button type="submit" class="btn btn-lg btn-dark mt-3 mb-5">
+              Añadir al carrito
+            </button>
+            @endauth
+            </form>
               </div>
             </div>
           </div>

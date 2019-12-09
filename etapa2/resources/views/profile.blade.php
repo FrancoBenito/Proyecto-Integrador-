@@ -6,18 +6,26 @@
 @endsection
 
 @section('componentcss')
+<link rel="stylesheet" href="/css/product.css">
+@endsection
+
+@section('componentcss')
 <!-- <link rel="stylesheet" href="/css/profile.css"> -->
 @endsection
 
 @section('main')
-<div class="container">
-    <h1>Editar Perfil</h1>
+<div class="container alt-font2">
+    <h4 class="mt-5 mb-5 text">Editar Perfil</h4>
   	<hr>
 	<div class="row">
       <!-- left column -->
       <div class="col-md-3">
         <div class="text-center">
-          <img src="/storage/{{Auth::user()->avatar}}" class="avatar img-circle" alt="avatar">
+          <img class="img-size mt-4 mb-5" src="/storage/{{Auth::user()->avatar}}" class="avatar img-circle" alt="avatar">
+        <div class="mt-1 mb-5">
+              <a class="btn btn-black" href="contact.html">TUS COMPRAS</a>
+              </div>
+              <hr size=20 color="#ed1164">
           <!-- <h6>Upload a different photo...</h6>
           
           <input type="file" class="form-control"> -->
@@ -27,7 +35,7 @@
       <!-- edit form column -->
       <div class="col-md-9 personal-info">
 
-        <h3>Tu información</h3>
+        <h5 class="mb-5 mt-3">Tu información</h5>
 
         <form class="form-horizontal" role="form" method="post" action="/profile">
         {{csrf_field()}}
@@ -58,9 +66,10 @@
           <div class="form-group">
             <label class="col-md-3 control-label"></label>
             <div class="col-md-8">
-              <input type="submit" class="btn btn-primary" value="Save Changes">
+              <input type="submit" class="btn btn-black" value="GUARDAR">
               <span></span>
-              <input type="reset" class="btn btn-default" value="Cancel">
+              <input type="reset" class="btn btn-black" value="CANCELAR">
+
             </div>
           </div>
         </form>
