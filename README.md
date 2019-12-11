@@ -1,6 +1,8 @@
-<center> <h1>Digital Rugby House</h1> </center>
+<h1 align="center">Digital Rugby House</h1> 
 
-<center> <img src="/etapa2/public/images/drh_logo80.png"> </center>
+<p align="center">
+<img src="/etapa2/public/images/drh_logo80.png"> 
+</p>
 
 <p align="center">
   <b>Links útiles:</b><br>
