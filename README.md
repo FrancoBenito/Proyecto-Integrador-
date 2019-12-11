@@ -24,20 +24,20 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque metus magna, ve
 
 ---
 
-<h6>  Primero clonar el repositorio: </h6>
+<h5>  Primero clonar el repositorio: </h5>
 
 ```
  git clone https://github.com/FrancoBenito/Proyecto-Integrador-1.git 
 ```
 
-<h6> Instalar Composer: </h6>
+<h5> Instalar Composer: </h5>
 
 ```
 cd etapa2
 composer install
 ```
 
-<h6> MySQL Workbench </h6>
+<h5> MySQL Workbench </h5>
 
 Instalar <a href="https://www.mysql.com/products/workbench/">MySQL Workbench</a>
 
@@ -45,7 +45,7 @@ Instalar <a href="https://www.mysql.com/products/workbench/">MySQL Workbench</a>
 Crear schema con el nombre: digitalrugby_db
 ```
 
-<h6> Configurar .env </h6>
+<h5> Configurar .env </h5>
 
 <p>Clonar el archivo .env.example, renombrarlo .env y modificar lo siguiente:</p>
 
@@ -58,14 +58,14 @@ DB_USERNAME=root
 DB_PASSWORD=root
 ```
 
-<h6> Correr artisan (Migraciones y Seeders) </h6>
+<h5> Correr artisan (Migraciones y Seeders) </h5>
 
 ```
 cd etapa2
 php artisan migrate
 php artisan db:seed
 ```
-<h6> Levantar el localhost </h6>
+<h5> Levantar el localhost </h5>
 
 ```
 cd etapa2
