@@ -52,6 +52,18 @@
             </div>
           </div>
           <div class="form-group">
+            <label for="pais" class="col-lg-3 control-label">Pais:</label>
+            <div class="col-lg-8">
+              <input name="pais" id="text" class="form-control" type="text" value="{{$user["pais"]}}" readonly>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="provincia" class="col-lg-3 control-label">Provincia:</label>
+            <div class="col-lg-8">
+              <input name="provincia" id="text" class="form-control" type="text" value="{{$user["provincia"]}}" readonly>
+            </div>
+          </div>
+          <div class="form-group">
             <label for="password" class="col-md-3 control-label">Password:</label>
             <div class="col-md-8">
               <input name="password" id="password" class="form-control" type="password" value="{{$user["password"]}}">

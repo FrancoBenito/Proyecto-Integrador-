@@ -12,7 +12,9 @@ class ProfileController extends Controller
       $user =[
         'name' => Auth::user()->name,
         'email' => Auth::user()->email,
-        'password' => Auth::user()->password
+        'password' => Auth::user()->password,
+        'pais' => Auth::user()->pais,
+        'provincia' => Auth::user()->provincia,
       ] ;
 
       return view('profile',[

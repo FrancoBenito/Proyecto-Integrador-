@@ -28,5 +28,6 @@
 
   @include('footer')
 
+  @yield('js')
 </body>
 </html>

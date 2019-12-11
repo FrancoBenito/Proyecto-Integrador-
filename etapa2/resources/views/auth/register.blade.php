@@ -38,6 +38,17 @@
                 @enderror
               </div>
 
+              <div class="form-label-group mt-3">
+                <select name="pais" id="pais">
+                  <option disabled selected value>Elija un pais</option>
+                </select>
+                <label class="mt-1" for="email">Pais</label>
+              </div>
+
+              <div class="form-label-group mt-3 provincia">
+                <label class="" for="provincia" hidden></label>
+              </div>
+
               <div class="form-label-group mt-4">
                 <input type="password" id="password" class="form-control @error('password') is-invalid @enderror" placeholder="Contraseña" name="password"  autocomplete="new-password" required>
                 <label class="mt-1" for="password">Contraseña</label>
@@ -52,7 +63,6 @@
                 <input autocomplete="new-password" name="password_confirmation" type="password" id="password-confirm" class="form-control" placeholder="Contraseñar" required>
                 <label class="mt-1" for="password-confirm">Confirmar contraseña</label>
               </div>
-
 
               <div class="form-group row mt-4">
                 <div class="col-md-12">
@@ -69,4 +79,8 @@
       </div>
     </div>
 </div>
+@endsection
+
+@section('js')
+<script src="/js/provincias.js"></script>
 @endsection

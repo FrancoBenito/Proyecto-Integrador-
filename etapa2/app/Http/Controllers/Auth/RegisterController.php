@@ -54,6 +54,7 @@ class RegisterController extends Controller
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'pais' => ['required']
         ]);
     }
 
@@ -67,11 +68,16 @@ class RegisterController extends Controller
     {
       $ruta = $data["avatar"]->store('public');
       $nombreArchivo = basename($ruta);
+      if(!array_key_exists('provincia', $data)){
+        $data["provincia"] = " ";
+      }
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
             'avatar' => $nombreArchivo,
+            'pais' => $data['pais'],
+            'provincia' => $data['provincia']
         ]);
     }
 }
