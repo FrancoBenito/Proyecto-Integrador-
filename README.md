@@ -23,20 +23,25 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque metus magna, ve
 ---
 
 <h6>  Primero clonar el repositorio: </h6>
+
 ```
  git clone https://github.com/FrancoBenito/Proyecto-Integrador-1.git 
 ```
 
 <h6> Instalar Composer: </h6>
 
-`cd etapa2`
-`composer install`
+```
+cd etapa2
+composer install
+```
 
 <h6> MySQL Workbench </h6>
 
 Instalar <a href="https://www.mysql.com/products/workbench/">MySQL Workbench</a>
 
-`Crear schema con el nombre: digitalrugby_db`
+```
+Crear schema con el nombre: digitalrugby_db
+```
 
 <h6> Configurar .env </h6>
 
@@ -52,6 +57,7 @@ DB_PASSWORD=root
 ```
 
 <h6> Correr artisan (Migraciones y Seeders) </h6>
+
 ```
 cd etapa2
 php artisan migrate
@@ -70,5 +76,5 @@ php artisan serv
 
 ---
 
-Christian Fischer
-Bautista Tancredi
+<p>Christian Fischer</p>
+<p>Bautista Tancredi</p>
