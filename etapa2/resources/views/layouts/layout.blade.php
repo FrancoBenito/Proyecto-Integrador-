@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="/css/app.css">
+  
   @yield('componentcss')
 
   <!-- favicon -->
@@ -16,6 +17,7 @@
 
   <!-- Scripts -->
   <script src="{{ asset('js/app.js') }}" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 
   <title>@yield('title')</title>
 </head>
@@ -29,5 +31,6 @@
   @include('footer')
 
   @yield('js')
+  <script src="/js/easter.js"> </script>
 </body>
 </html>
