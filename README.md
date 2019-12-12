@@ -8,10 +8,10 @@
   <img src="https://media.giphy.com/media/pNZcFyDjxOawU/giphy.gif">
 </p>
 
-<h1> Introducción </h1>
+<h1> Introduction </h1>
 
 <p> 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque metus magna, venenatis ut facilisis sit amet, eleifend in diam. Pellentesque a dignissim dolor, in ultricies arcu. Sed dapibus sem quis dui rhoncus, non sodales magna venenatis. Ut vel faucibus est. Nam euismod, eros vitae maximus luctus, felis augue aliquet nulla, eu viverra quam mauris vel nisl. Sed mollis congue luctus. Nulla dapibus sagittis augue, at venenatis metus semper sit amet. Donec in vehicula sapien, vitae imperdiet est. Donec quis accumsan libero. Quisque laoreet ut est nec posuere.  </p>
+En este proyecto se utilizó Laravel, en su versión 5.8 para desarrollar el backend. Para trabajar en el frontend, se utilizaron varios archivos Javascript para manejar la API de Provincias, el tema del sitio y el Easter Egg. </p>
 
 <h1> Installation </h1>
 
@@ -35,7 +35,7 @@ php artisan serv
   <img src="/etapa2/public/images/database.png">
 </p>
 
-<h1> Autores </h1>
+<h1> Authors </h1>
 
 <p>Christian Fischer</p>
 <p>Bautista Tancredi</p>
