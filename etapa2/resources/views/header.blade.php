@@ -11,20 +11,24 @@
       <li class="nav-item">
         <a class="nav-link active alt-font" href="/internacional">Internacional <span class="sr-only">(current)</span></a>
       </li>
+
       <li class="nav-item">
-        <a class="nav-link alt-font" href="/urba">URBA</a>
+        <a class="nav-link alt-font" href="/urba">URBA2</a>
       </li>
       <li class="nav-item">
         <a class="nav-link alt-font" href="/promociones">Promociones</a>
       </li>
+      
     </ul>
 <!--   Show this only lg screens and up   -->
     <a class="navbar-brand d-none d-lg-block" href="/"><img src="{{url('/images/drh_logo80.png')}}"></a>
     <ul class="navbar-nav flex-fill w-100 flex-nowrap justify-content-end">
       @guest
+      
       <li class="nav-item">
           <a class="nav-link alt-font" href="{{ route('login') }}">{{ __('Login') }}</a>
       </li>
+      
       @if (Route::has('register'))
           <li class="nav-item">
               <a class="nav-link alt-font" href="{{ route('register') }}">{{ __('Register') }}</a>
@@ -58,12 +62,20 @@
               </form>
           </div>
       </li>
+    
   @endguest
       @auth
       <li class="nav-item">
         <a class="nav-link alt-font" href="/carrito">Carrito</a>
       </li>
       @endauth
+      <li class="nav-item">
+        <a id= "dark" class="nav-link alt-font"><img src="{{url('/images/moonn.png')}}" width="22" height="22" alt="luna"></a>
+      </li>  
+      
+      <li class="nav-item">
+        <a id= "light" class="nav-link alt-font"><img src="{{url('/images/sunn.png')}}" width="22" height="22" alt="Sol"></a>
+      </li>
     </ul>
   </div>
 </div>

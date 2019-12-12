@@ -32,5 +32,7 @@
 
   @yield('js')
   <script src="/js/easter.js"> </script>
+  <script src="/js/theme2.js"> </script>
+  
 </body>
 </html>

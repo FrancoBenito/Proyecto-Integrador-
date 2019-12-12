@@ -6,52 +6,52 @@
 @import url('https://fonts.googleapis.com/css?family=Gochi+Hand&display=swap');
 
 /* font family */
-.alt-font0 {
-    font-family: "Montserrat", sans-serif;
+.dark-alt-font0 {
+    font-family: "Quicksand", sans-serif;
     font-weight: 100;
-    color: #ed1164;
+    color: #ed9511;
 }
 
-.alt-font00 {
-    font-family: "Montserrat", sans-serif;
+.dark-alt-font00 {
+    font-family: "Quicksand", sans-serif;
     font-weight: 100;
-    color: #001b50;
+    color: #1c8102;
 }
 
-.alt-font {
-    font-family: "Montserrat", sans-serif;
+.dark-alt-font {
+    font-family: "Quicksand", sans-serif;
     font-weight: 300;
-    color: #ed1164;
+    color: #ed9511;
 }
-.alt-fontt {
-    font-family: "Montserrat", sans-serif;
+.dark-alt-fontt {
+    font-family: "Quicksand", sans-serif;
     font-weight: 300;
-    color: #001b50;
+    color: #1c8102;
 }
-.alt-font2 {
-    font-family: "Montserrat", sans-serif;
+.dark-alt-font2 {
+    font-family: "Quicksand", sans-serif;
     font-weight: 500;
-    color: #001b50;
+    color: #1c8102;
 }
-.alt-font22 {
-    font-family: "Montserrat", sans-serif;
+.dark-alt-font22 {
+    font-family: "Quicksand", sans-serif;
     font-weight: 500;
-    color: #ed1164;
+    color: #ed9511;
 }
-.alt-font3 {
-    font-family: "Montserrat", sans-serif;
+.dark-alt-font3 {
+    font-family: "Quicksand", sans-serif;
     font-weight: 700;
-    color: #001b50;
+    color: #1c8102;
 }
-.footer-title-font {
-    font-family: "Montserrat", sans-serif;
+.dark-footer-title-font {
+    font-family: "Quicksand", sans-serif;
     font-weight: 300;
     color: #ffffff;
     font-size: 20px;
 }
 
-.footer-text-font {
-    font-family: "Montserrat", sans-serif;
+.dark-footer-text-font {
+    font-family: "Quicksand", sans-serif;
     font-weight: 200;
     color: #ffffff;
     font-size: 12px;
@@ -59,8 +59,8 @@
 
 }
 
-.button-text-font {
-    font-family: "Montserrat", sans-serif;
+.dark-button-text-font {
+    font-family: "Quicksand", sans-serif;
     font-weight: 400;
     color: #ffffff;
     font-size: 15px;
@@ -68,16 +68,18 @@
 }
 
 
-.main-font {
-    font-family: "Lora", sans-serif;
+
+
+.dark-main-font {
+    font-family: 'Gochi Hand', cursive;
 }
 
 * {
     box-sizing: border-box;
 }
 
-html {
-    font-family: "Montserrat", sans-serif;
+html{
+    font-family: "Quicksand", sans-serif;
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -98,6 +100,7 @@ section {
 
 body {
     margin: 0;
+    background-color: #001b50;;
 }
 
 h1,
@@ -642,7 +645,7 @@ a {
 a:hover,
 a:focus {
     text-decoration: none;
-    color: #ed1164;
+    color: #ed9511;
 }
 
 h1,
@@ -729,13 +732,13 @@ h6 {
 }
 
 .btn.btn-black {
-    background: #001b50;
-    border: 1px solid #001b50;
+    background: #1c8102;
+    border: 1px solid #1c8102;
     color: #fff;
 }
 .btn.btn-black:hover {
-    background: #ed1164;
-    border: 1px solid #ed1164;
+    background: #ed9511;
+    border: 1px solid #ed9511;
     color: #fff;
 }
 
@@ -750,7 +753,7 @@ h6 {
 
 .precio {
     margin-bottom: 0;
-    color: #ed1164;
+    color: #ed9511;
     font-weight: 400;
     font-size: 16px;
 }
@@ -758,7 +761,7 @@ h6 {
 @media (max-width: 767.98px) {
     .precio {
         margin-bottom: 0;
-        color: #ed1164;
+        color: #ed9511;
         font-weight: 400;
         font-size: 16px;
         text-align: center;
@@ -771,14 +774,14 @@ h6 {
 
 .precio2 {
     margin-bottom: 0;
-    color: #ed1164;
+    color: #ed9511;
     font-weight: 400;
     font-size: 26px;
 }
 
 .product .text p.precio {
     margin-bottom: 0;
-    color: #ed1164;
+    color: #ed9511;
     font-weight: 400;
 }
 
@@ -872,7 +875,7 @@ h6 {
 
 footer a:hover {
     text-decoration: none;
-    color: #ed1164;
+    color: #ed9511;
 }
 
 footer .hr {
@@ -884,7 +887,7 @@ footer .hr {
 }
 
 #id {
-background-color: #001b50;
+background-color: #1c8102;
 
 
 }
@@ -918,7 +921,7 @@ footer ul li {
 }
 
 #products a:hover {
-    color: #ed1164;
+    color: #ed9511;
   }
   
 
@@ -931,7 +934,7 @@ footer ul li {
 
 #altura{
     height: 200px;
-    background: #ed1164;
+    background: #ed9511;
 }
 
 .img-size{

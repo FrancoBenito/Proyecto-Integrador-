@@ -6,7 +6,7 @@
 @endsection
 
 @section('componentcss')
-<link rel="stylesheet" href="/css/product.css">
+<link  id="estilos" rel="stylesheet" href="/css/product.css">
 @endsection
 
 @section('componentcss')
