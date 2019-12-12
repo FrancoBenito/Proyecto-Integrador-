@@ -17,7 +17,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque metus magna, ve
 
 
 ```
- git clone https://github.com/FrancoBenito/Proyecto-Integrador-1.git 
+git clone https://github.com/FrancoBenito/Proyecto-Integrador-1.git 
 cd Proyecto-Integrador-1
 cd etapa2
 composer install
