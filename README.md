@@ -13,8 +13,7 @@
 <p> 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque metus magna, venenatis ut facilisis sit amet, eleifend in diam. Pellentesque a dignissim dolor, in ultricies arcu. Sed dapibus sem quis dui rhoncus, non sodales magna venenatis. Ut vel faucibus est. Nam euismod, eros vitae maximus luctus, felis augue aliquet nulla, eu viverra quam mauris vel nisl. Sed mollis congue luctus. Nulla dapibus sagittis augue, at venenatis metus semper sit amet. Donec in vehicula sapien, vitae imperdiet est. Donec quis accumsan libero. Quisque laoreet ut est nec posuere.  </p>
 
-<h1> Instalación </h1>
-
+<h1> Installation </h1>
 
 ```
 git clone https://github.com/FrancoBenito/Proyecto-Integrador-1.git 
@@ -29,6 +28,12 @@ php artisan migrate
 php artisan db:seed
 php artisan serv
 ```
+
+<h1> Database Design </h1>
+
+<p align="center">
+  <img src="/etapa2/public/images/database.png">
+</p>
 
 <h1> Autores </h1>
 
