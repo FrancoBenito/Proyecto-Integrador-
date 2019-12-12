@@ -26,8 +26,8 @@ class UpdateUsersTableAddPaisProvinciaColumns extends Migration
     public function down()
     {
       Schema::table('users', function (Blueprint $table) {
-      $table->dropColumn('provincia');
-      $table->string('provincia', 255);
+      $table->dropColumn('pais');
+      $table->dropColumn('provincia', 255);
     });
   }
 }
