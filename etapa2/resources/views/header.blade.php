@@ -70,12 +70,12 @@
       </li>
       @endauth
       <li class="nav-item">
-        <a id= "dark" class="nav-link alt-font"><img src="{{url('/images/moonn.png')}}" width="22" height="22" alt="luna"></a>
+        <a id= "dark" class="nav-link alt-font"><img id="luna" src="{{url('/images/moonn.png')}}" width="22" height="22" alt="luna"></a>
       </li>  
       
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <a id= "light" class="nav-link alt-font"><img src="{{url('/images/sunn.png')}}" width="22" height="22" alt="Sol"></a>
-      </li>
+      </li> -->
     </ul>
   </div>
 </div>
