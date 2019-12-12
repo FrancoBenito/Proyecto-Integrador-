@@ -31,7 +31,7 @@
     </div>
   </div>
   <div class="container">
-    <!-- class="row">
+    <div class="row">
     @foreach($products as $product)
       <div class="col-md-6 col-lg-6">
         <div class="product">
