@@ -6,51 +6,51 @@
 @import url('https://fonts.googleapis.com/css?family=Gochi+Hand&display=swap');
 
 /* font family */
-.dark-alt-font0 {
+.alt-font0 {
     font-family: "Quicksand", sans-serif;
     font-weight: 100;
     color: #ed9511;
 }
 
-.dark-alt-font00 {
+.alt-font00 {
     font-family: "Quicksand", sans-serif;
     font-weight: 100;
-    color: #1c8102;
+    color: #92ff77;
 }
 
-.dark-alt-font {
+.alt-font {
     font-family: "Quicksand", sans-serif;
     font-weight: 300;
     color: #ed9511;
 }
-.dark-alt-fontt {
+.alt-fontt {
     font-family: "Quicksand", sans-serif;
     font-weight: 300;
-    color: #1c8102;
+    color: #92ff77;
 }
-.dark-alt-font2 {
+.alt-font2 {
     font-family: "Quicksand", sans-serif;
     font-weight: 500;
-    color: #1c8102;
+    color: #92ff77;
 }
-.dark-alt-font22 {
+.alt-font22 {
     font-family: "Quicksand", sans-serif;
     font-weight: 500;
     color: #ed9511;
 }
-.dark-alt-font3 {
+.alt-font3 {
     font-family: "Quicksand", sans-serif;
     font-weight: 700;
-    color: #1c8102;
+    color: #92ff77;
 }
-.dark-footer-title-font {
+.footer-title-font {
     font-family: "Quicksand", sans-serif;
     font-weight: 300;
-    color: #ffffff;
+    color: rgba(241, 255, 50, 0.9);
     font-size: 20px;
 }
 
-.dark-footer-text-font {
+.footer-text-font {
     font-family: "Quicksand", sans-serif;
     font-weight: 200;
     color: #ffffff;
@@ -59,10 +59,10 @@
 
 }
 
-.dark-button-text-font {
+.button-text-font {
     font-family: "Quicksand", sans-serif;
     font-weight: 400;
-    color: #ffffff;
+    color:rgba(241, 255, 50, 0.9);
     font-size: 15px;
 
 }
@@ -70,7 +70,7 @@
 
 
 
-.dark-main-font {
+.main-font {
     font-family: 'Gochi Hand', cursive;
 }
 
@@ -102,6 +102,13 @@ body {
     margin: 0;
     background-color: #001b50;;
 }
+.navbar {
+    background-color: #001b50 !important;
+}
+.nav-link {
+    color: rgb(202, 202, 202) !important;
+}
+
 
 h1,
 h2,
@@ -146,7 +153,7 @@ h6,
     font-family: inherit;
     font-weight: 500;
     line-height: 1.2;
-    color: inherit;
+    color: #ed9511;
 }
 
 h1,
@@ -705,7 +712,7 @@ h6 {
     font-weight: 700;
     color: #fff;
     font-size: 50px;
-    font-family: "Montserrat", Arial, sans-serif;
+    font-family: "quicksand", Arial, sans-serif;
     letter-spacing: 3px;
     text-transform: uppercase;
 }
@@ -715,7 +722,7 @@ h6 {
         font-weight: 700;
         color: #fff;
         font-size: 30px;
-        font-family: "Montserrat", Arial, sans-serif;
+        font-family: "quicksand", Arial, sans-serif;
         letter-spacing: 3px;
         text-transform: uppercase;
     }
@@ -748,7 +755,7 @@ h6 {
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-family: "Montserrat", Arial, sans-serif;
+    font-family: "quicksand", Arial, sans-serif;
 }
 
 .precio {
@@ -804,14 +811,14 @@ h6 {
 .prod-detalle h3 {
     font-size: 30px;
     font-weight: 700;
-    font-family: "Montserrat";
+    font-family: "quicksand";
 }
 
 @media (max-width: 767.98px) {
     .prod-detalle h3 {
         font-size: 20px;
         font-weight: 700;
-        font-family: "Montserrat";
+        font-family: "quicksand";
         text-align: center;
     }
 }
@@ -835,7 +842,7 @@ h6 {
     font-size: 40px;
     font-weight: 600;
     color: #000000;
-    font-family: "Montserrat", sans-serif;
+    font-family: "quicksand", sans-serif;
 }
 
 @media (max-width: 767.98px) {
@@ -883,7 +890,7 @@ footer .hr {
     margin-bottom: 16px;
     border: 0;
     width: 80%;
-    border-top: 1px solid rgba(112, 107, 107, 0.9);
+    border-top: 1px solid rgba(241, 255, 50, 0.9);
 }
 
 #id {
@@ -912,7 +919,7 @@ footer ul li {
     margin-top: 42px;
     margin-bottom: 22px;
     font-size: 14px;
-    font-family: 'montserrat';
+    font-family: 'Quicksand';
     font-weight: 300;
     text-align: left;}
 
@@ -954,7 +961,7 @@ footer ul li {
         margin-top: 42px;
         margin-bottom: 22px;
         font-size: 14px;
-        font-family: 'montserrat';
+        font-family: 'quicksand';
         font-weight: 300;
         text-align: left ;}
 }

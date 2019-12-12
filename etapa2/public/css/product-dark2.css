@@ -7,66 +7,66 @@
 
 /* font family */
 .alt-font0 {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Quicksand", sans-serif;
     font-weight: 100;
-    color: #ffffff;
+    color: #ed9511;
 }
 
 .alt-font00 {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Quicksand", sans-serif;
     font-weight: 100;
-    color: #ffffff;
+    color: #92ff77;
 }
 
 .alt-font {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Quicksand", sans-serif;
     font-weight: 300;
-    color: #ffffff;
+    color: #ed9511;
 }
 .alt-fontt {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Quicksand", sans-serif;
     font-weight: 300;
-    color: #ffffff;
+    color: #92ff77;
 }
 .alt-font2 {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Quicksand", sans-serif;
     font-weight: 500;
-    color: #ffffff;
+    color: #92ff77;
 }
 .alt-font22 {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Quicksand", sans-serif;
     font-weight: 500;
-    color: #ffffff;
+    color: #ed9511;
 }
 .alt-font3 {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Quicksand", sans-serif;
     font-weight: 700;
-    color: #ffffff;
+    color: #92ff77;
 }
 .footer-title-font {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Quicksand", sans-serif;
     font-weight: 300;
-    color: #ffffff;
+    color: rgba(241, 255, 50, 0.9);
     font-size: 20px;
 }
 
 .footer-text-font {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Quicksand", sans-serif;
     font-weight: 200;
-    color: #ffffff;
+    color: rgba(241, 255, 50, 0.9);
     font-size: 12px;
     letter-spacing: 1px;
 }
 
 .button-text-font {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Quicksand", sans-serif;
     font-weight: 400;
-    color: #ffffff;
+    color: rgba(241, 255, 50, 0.9);
     font-size: 15px;
 }
 
 .main-font {
-    font-family: "Lora", sans-serif;
+    font-family: 'Gochi Hand', cursive;
 }
 
 * {
@@ -74,10 +74,10 @@
 }
 
 html {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Quicksand", sans-serif;
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: rgba(211, 27, 134, 0);
 }
 
 article,
@@ -98,10 +98,10 @@ body {
     background-color: #000000;
 }
 .navbar {
-    background-color: #000 !important;
+    background-color: #001b50 !important;
 }
 .nav-link {
-    color: white !important;
+    color: rgb(202, 202, 202) !important;
 }
 
 h1,
@@ -147,7 +147,7 @@ h6,
     font-family: inherit;
     font-weight: 500;
     line-height: 1.2;
-    color: inherit;
+    color: #ed9511;
 }
 
 h1,
@@ -703,7 +703,7 @@ h6 {
     font-weight: 700;
     color: #fff;
     font-size: 50px;
-    font-family: "Montserrat", Arial, sans-serif;
+    font-family: "Quicksand", Arial, sans-serif;
     letter-spacing: 3px;
     text-transform: uppercase;
 }
@@ -713,7 +713,7 @@ h6 {
         font-weight: 700;
         color: #fff;
         font-size: 30px;
-        font-family: "Montserrat", Arial, sans-serif;
+        font-family: "Quicksand", Arial, sans-serif;
         letter-spacing: 3px;
         text-transform: uppercase;
     }
@@ -744,7 +744,7 @@ h6 {
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-family: "Montserrat", Arial, sans-serif;
+    font-family: "Quicksand", Arial, sans-serif;
 }
 
 .precio {
@@ -800,14 +800,14 @@ h6 {
 .prod-detalle h3 {
     font-size: 30px;
     font-weight: 700;
-    font-family: "Montserrat";
+    font-family: "Quicksand";
 }
 
 @media (max-width: 767.98px) {
     .prod-detalle h3 {
         font-size: 20px;
         font-weight: 700;
-        font-family: "Montserrat";
+        font-family: "Quicksand";
         text-align: center;
     }
 }
@@ -830,8 +830,8 @@ h6 {
     position: relative;
     font-size: 40px;
     font-weight: 600;
-    color: #fff;
-    font-family: "Montserrat", sans-serif;
+    color: #ed9511;
+    font-family: "Quicksand", sans-serif;
 }
 
 @media (max-width: 767.98px) {
@@ -871,7 +871,7 @@ h6 {
 
 footer a:hover {
     text-decoration: none;
-    color: #fff;
+    color: #ed9511;
 }
 
 footer .hr {
@@ -879,11 +879,11 @@ footer .hr {
     margin-bottom: 16px;
     border: 0;
     width: 80%;
-    border-top: 1px solid rgba(112, 107, 107, 0.9);
+    border-top: 1px solid rgba(241, 255, 50, 0.9);
 }
 
 #id {
-    background-color: #000;
+    background-color: #1c8102;
 }
 
 footer p {
@@ -902,18 +902,18 @@ footer ul li {
     margin-top: 42px;
     margin-bottom: 22px;
     font-size: 14px;
-    font-family: "montserrat";
+    font-family: "Quicksand";
     font-weight: 300;
     text-align: left;
 }
 
 #products a {
     color: #7c7c7c;
-    color: #fff;
+    color: #11edbd;
 }
 
 #products a:hover {
-    color: #fff;
+    color: #ed9511;
 }
 
 #img {
@@ -924,7 +924,12 @@ footer ul li {
 
 #altura {
     height: 200px;
-    background: #ed1164;
+    background: #ed9511;
+}
+
+#card-color {
+    background: #001b50;
+    background-color: #001b50 !important;
 }
 
 .img-size {
@@ -947,7 +952,7 @@ footer ul li {
         margin-top: 42px;
         margin-bottom: 22px;
         font-size: 14px;
-        font-family: "montserrat";
+        font-family: "Quicksand";
         font-weight: 300;
         text-align: left;
     }

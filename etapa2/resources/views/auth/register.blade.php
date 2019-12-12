@@ -13,7 +13,7 @@
     <div class="row">
       <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
         <div class="card card-signin my-5">
-          <div class="card-body">
+          <div id="card-color" class="card-body">
             <h5 class="card-title text-center alt-fontt">Registro</h5>
             <form class="form-signin" method="POST" action="{{ route('register') }}"enctype="multipart/form-data">
             @csrf
