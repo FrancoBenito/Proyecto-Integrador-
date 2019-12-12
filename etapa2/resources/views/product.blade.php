@@ -57,7 +57,7 @@
 <hr />
 <hr />
 <!-- loader -->
-<div id="drh-loader" class="show fullscreen">
+<!-- <div id="drh-loader" class="show fullscreen">
   <svg class="circular" width="48px" height="48px">
     <circle
       class="path-bg"
@@ -79,5 +79,5 @@
       stroke="#F96D00"
     />
   </svg>
-</div>
+</div> -->
 @endsection
