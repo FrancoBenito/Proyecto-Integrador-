@@ -18,6 +18,8 @@
             <form class="form-signin" method="POST" action="{{ route('register') }}"enctype="multipart/form-data">
             @csrf
 
+            
+
             <div class="form-label-group alt-fontt mt-5">
                 <input value="{{ old('name') }}" name="name" type="text" id="name" class="form-control @error('name') is-invalid @enderror" autocomplete="name" placeholder="Usuario" required autofocus>
                 <label class="mt-1" for="name">Usuario</label>

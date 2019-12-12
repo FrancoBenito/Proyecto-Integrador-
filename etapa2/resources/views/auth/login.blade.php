@@ -18,6 +18,7 @@
           <form class="form-signin" action="{{ route('login') }}" method="post">
           @csrf
 
+
             <div class="form-label-group alt-fontt mt-5">
               <input type="email" id="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" autocomplete="email" placeholder="Email address" required autofocus>
               <label class="mt-3" for="inputEmail">Email</label>
