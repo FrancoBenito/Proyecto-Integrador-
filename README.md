@@ -23,8 +23,7 @@ cd etapa2
 composer install
 # Crear archivo .env a partir del .env.example
 # Crear esquema en la db y configurar .env con el nombre del esquema y la contraseña de la db
-cd etapa2
-php artinsan link:storage
+php artisan link:storage
 php artisan key:generate
 php artisan migrate
 php artisan db:seed
