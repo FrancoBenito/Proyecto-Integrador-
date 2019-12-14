@@ -42,7 +42,7 @@
             <div class="d-flex">
               <div class="pricing">
                 <p class="precio"><span>${{$product->price}}</span></p>
-                <form action="/" method="post">
+                <!-- <form action="/" method="post">
             {{csrf_field()}}
             @auth
             <input type="hidden" name="user_id" value="{{ Auth::user()->id }}">
@@ -53,7 +53,7 @@
               Añadir al carrito
             </button>
             @endauth
-            </form>
+            </form> -->
               </div>
             </div>
           </div>

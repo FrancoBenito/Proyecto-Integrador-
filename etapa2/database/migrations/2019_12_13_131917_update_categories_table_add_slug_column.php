@@ -15,8 +15,6 @@ class UpdateCategoriesTableAddSlugColumn extends Migration
     {
       Schema::table('categories', function (Blueprint $table) {
         $table->string('slug', 255);
-
-        $table->unique('slug');
     });
     }
 

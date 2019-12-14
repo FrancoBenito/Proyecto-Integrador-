@@ -18,7 +18,7 @@ class CarritoController extends Controller
       'product_name' => $form["product_name"],
     ]);
 
-    return redirect('/carrito');
+    return redirect('/');
   }
 
   public function showAll(){
