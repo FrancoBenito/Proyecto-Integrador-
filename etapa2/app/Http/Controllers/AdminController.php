@@ -67,7 +67,7 @@ class AdminController extends Controller
     $product = Product::find($form["id"]);
 
     $product -> name = $form["name"];
-    $product -> image_url = $form["image_url"];
+    // $product -> image_url = $form["image_url"];
     $product -> price = $form["price"];
     $product -> promo = $form["promo"];
     $product -> favorite = $form["favorite"];
