@@ -6,6 +6,7 @@
 
 @section('componentcss')
 <link id="estilos" rel="stylesheet" href="/css/product.css">
+<link rel="stylesheet" type="text/css" href="/css/sweetalert.css">
 @endsection
 
 @section('main')
@@ -39,16 +40,19 @@
           </div>
         </div>
         <br />
-        <form action="{{ url('product/'.$product->id)}}" method="post">
+        <form id="agregarProductoForm" action="{{ url('product/'.$product->id)}}" method="post">
             {{csrf_field()}}
             @auth
             <input type="hidden" name="user_id" value="{{ Auth::user()->id }}">
             <input type="hidden" name="product_id" value="{{$product -> id}}">
             <input type="hidden" name="product_price" value="{{$product -> price}}">
             <input type="hidden" name="product_name" value="{{$product -> name}}">
-            <button type="submit" class="btn btn-black">
+            <button type="submit" class="btn btn-black" onclick="EventoCarrito()">
               Añadir al carrito
             </button>
+
+  
+
             @endauth
       </div>
     </div>
@@ -80,4 +84,9 @@
     />
   </svg>
 </div> -->
+@endsection
+
+@section('js')
+<script src="/js/sweetalert.min.js"></script>
+<script src="/js/product-detail.js"></script>
 @endsection
