@@ -16,7 +16,7 @@
 .alt-font00 {
     font-family: "Quicksand", sans-serif;
     font-weight: 100;
-    color: #92ff77;
+    color: #86fd17;
 }
 
 .alt-font {
@@ -27,12 +27,12 @@
 .alt-fontt {
     font-family: "Quicksand", sans-serif;
     font-weight: 300;
-    color: #92ff77;
+    color: #86fd17;
 }
 .alt-font2 {
     font-family: "Quicksand", sans-serif;
     font-weight: 500;
-    color: #92ff77;
+    color: #86fd17;
 }
 .alt-font22 {
     font-family: "Quicksand", sans-serif;
@@ -42,7 +42,7 @@
 .alt-font3 {
     font-family: "Quicksand", sans-serif;
     font-weight: 700;
-    color: #92ff77;
+    color: #86fd17;
 }
 .footer-title-font {
     font-family: "Quicksand", sans-serif;
@@ -729,14 +729,14 @@ h6 {
 }
 
 .btn.btn-black {
-    background: #000;
-    border: 1px solid #000;
-    color: #fff;
+    background: #ed1164;
+    border: 1px solid #ed1164;
+    color: rgb(235, 235, 235);
 }
 .btn.btn-black:hover {
-    background: #fff;
-    border: 1px solid #fff;
-    color: #fff;
+    background: #86fd17;
+    border: 1px solid #86fd17;
+    color: #001b50;
 }
 
 .product .text h3 {
@@ -933,8 +933,21 @@ footer ul li {
     background-color: #001b50 !important;
 }
 
+#drop-color {
+    background: #012263;
+    background-color: #012263 !important;
+}
+
 .img-size {
     width: 200px;
+}
+
+
+.custom-toggler.navbar-toggler {
+    border-color: rgb(237,17,100);
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(237,17,100)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 @media (max-width: 767.98px) {
@@ -957,4 +970,6 @@ footer ul li {
         font-weight: 300;
         text-align: left;
     }
+
+
 }

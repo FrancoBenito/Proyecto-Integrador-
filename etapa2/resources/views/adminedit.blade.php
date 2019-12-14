@@ -14,7 +14,7 @@
     <div class="row">
       <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
         <div class="card card-signin my-5">
-          <div class="card-body">
+          <div id="card-color" class="card-body">
           <h6 class="card-title alt-font2 text-center">Editar producto</h6>
             <form class="form-signin" action="/admin/edit/{$product->id}" method="post">
             {{csrf_field()}}
@@ -51,7 +51,7 @@
                   @endforeach
                 </select>
               </div>
-              <button class="btn btn-lg btn-primary btn-block text-uppercase mt-5 footer-title-font" type="submit">Editar producto</button>
+              <button class="btn btn-lg btn-black btn-block text-uppercase mt-5 footer-title-font" type="submit">Editar producto</button>
             </form>
             @if(count($errors) > 0)
             <div class="alert alert-danger">
@@ -71,13 +71,13 @@
     <div class="row">
       <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
         <div class="card card-signin my-5">
-          <div class="card-body">
+          <div id="card-color" class="card-body">
           <h6 class="card-title alt-font2 text-center"></h6>
             <form class="form-signin" action="/admin/edit/{$product->id}" method="post">
             {{csrf_field()}}
             {{ method_field('DELETE') }}
               <input type="hidden" name="id" value="{{$product->id}}">
-              <button class="btn btn-lg btn-primary btn-block text-uppercase mt-3 footer-title-font" type="submit">Eliminar producto</button>
+              <button class="btn btn-lg btn-black btn-block text-uppercase mt-3 footer-title-font" type="submit">Eliminar producto</button>
             </form>
           </div>
         </div>

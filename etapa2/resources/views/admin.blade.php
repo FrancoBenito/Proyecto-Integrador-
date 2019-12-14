@@ -18,7 +18,7 @@
 <div class="row">
       <div class="col-sm-12">
         <div class="card  my-5">
-          <div class="card-body text-center">
+          <div id="card-color" class="card-body text-center">
 <h6 class="alt-font2 text-center mt-1">Administrar productos</h6>
 <ul id='products'>
 @foreach($products as $product)

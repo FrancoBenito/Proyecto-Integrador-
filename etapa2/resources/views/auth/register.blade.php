@@ -30,7 +30,7 @@
                 @enderror
               </div>
 
-              <div class="form-label-group mt-3">
+              <div class="form-label-group alt-fontt mt-3">
                 <input type="email" id="email" class="form-control @error('email') is-invalid @enderror" placeholder="Email" name="email" value="{{ old('email') }}" autocomplete="email" required>
                 <label class="mt-1" for="email">Email</label>
                 @error('email')
@@ -40,7 +40,7 @@
                 @enderror
               </div>
 
-              <div class="form-label-group mt-3">
+              <div class="form-label-group alt-fontt mt-3">
                 <select name="pais" id="pais">
                   <option disabled selected value>Elija un pais</option>
                 </select>
@@ -51,7 +51,7 @@
                 <label class="" for="provincia" hidden></label>
               </div>
 
-              <div class="form-label-group mt-4">
+              <div class="form-label-group alt-fontt mt-4">
                 <input type="password" id="password" class="form-control @error('password') is-invalid @enderror" placeholder="Contraseña" name="password"  autocomplete="new-password" required>
                 <label class="mt-1" for="password">Contraseña</label>
                 @error('password')
@@ -61,19 +61,19 @@
                 @enderror
               </div>
 
-              <div class="form-label-group mt-3">
+              <div class="form-label-group alt-fontt mt-3">
                 <input autocomplete="new-password" name="password_confirmation" type="password" id="password-confirm" class="form-control" placeholder="Contraseñar" required>
                 <label class="mt-1" for="password-confirm">Confirmar contraseña</label>
               </div>
 
-              <div class="form-group row mt-4">
+              <div class="form-group row alt-fontt mt-4">
                 <div class="col-md-12">
                     <input id="avatar" type="file" class="form-control" name="avatar" required>
                     <label class="mt-1" for="avatar">Avatar</label>
                 </div>
               </div>
 
-              <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Registro</button>
+              <button class="btn btn-lg btn-black btn-block text-uppercase" type="submit">Registro</button>
 
             </form>
           </div>
