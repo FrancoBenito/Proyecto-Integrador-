@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class UpdateDestacadoProducts extends Migration
+class UpdateCategoriesTableAddSlugColumn extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,10 @@ class UpdateDestacadoProducts extends Migration
      */
     public function up()
     {
-      Schema::table('products', function (Blueprint $table) {;
-        $table->boolean('favorite');
+      Schema::table('categories', function (Blueprint $table) {
+        $table->string('slug', 255);
+
+        $table->unique('slug');
     });
     }
 
@@ -25,8 +27,8 @@ class UpdateDestacadoProducts extends Migration
      */
     public function down()
     {
-      Schema::table('products', function (Blueprint $table) {;
-        $table->dropColumn('favorite');
+      Schema::table('categories', function (Blueprint $table) {
+        $table->dropColumn('slug');
     });
     }
 }

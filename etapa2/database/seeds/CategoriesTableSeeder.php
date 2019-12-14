@@ -16,6 +16,7 @@ class CategoriesTableSeeder extends Seeder
           'name' => $name1,
           'created_at' => date('Y-m-d'),
           'updated_at' => date('Y-m-d'),
+          'slug' => Str::slug($name1)
       ]);
 
       $name2 = 'URBA';
@@ -23,6 +24,7 @@ class CategoriesTableSeeder extends Seeder
           'name' => $name2,
           'created_at' => date('Y-m-d'),
           'updated_at' => date('Y-m-d'),
+          'slug' => Str::slug($name2)
       ]);
     }
 }

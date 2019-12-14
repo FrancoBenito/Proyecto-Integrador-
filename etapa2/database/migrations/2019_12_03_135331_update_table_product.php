@@ -26,7 +26,9 @@ class UpdateTableProduct extends Migration
      */
     public function down()
     {
+      Schema::table('products', function (Blueprint $table) {
         $table->string('size', 3);
         $table->dropColumn('promo');
+      });
     }
 }

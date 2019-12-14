@@ -26,7 +26,9 @@ class UpdateTableCarritoAddPriceProductColumns extends Migration
      */
     public function down()
     {
-      $table->dropColumn('product_price');
-      $table->dropColumn('product_name');
+      Schema::table('carrito', function (Blueprint $table) {;
+        $table->dropColumn('product_price');
+        $table->dropColumn('product_name');
+    });
     }
 }

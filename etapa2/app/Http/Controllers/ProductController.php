@@ -5,20 +5,23 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Product;
 use App\Compra;
+use App\Category;
 use Illuminate\Support\Facades\Auth;
 
 
 class ProductController extends Controller
 {
   public function internacional(){
-    $products = Product::where('category_id','=',9)->get();
+
+    $products = Category::where('slug', 'internacional')->get()->first()->products;
+  
     return view('internacional', [
       'products' => $products
     ]);
   }
 
   public function urba(){
-    $products = Product::where('category_id','=',10)->get();
+    $products = Category::where('slug', 'urba')->get()->first()->products;
     return view('urba', [
       'products' => $products
     ]);
