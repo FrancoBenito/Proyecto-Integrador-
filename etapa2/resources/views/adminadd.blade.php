@@ -15,7 +15,7 @@
     <div class="row">
       <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
         <div class="card card-signin my-5">
-          <div class="card-body">
+          <div id="card-color" class="card-body">
           <h6 class="card-title text-center alt-font2">Agregar nuevo producto</h6>
             <form class="form-signin" action="/admin/add" method="post" enctype="multipart/form-data">
             {{csrf_field()}}
@@ -53,7 +53,7 @@
                   @endforeach
                 </select>
               </div>
-              <button class="btn btn-lg btn-primary btn-block text-uppercase mt-5 footer-title-font" type="submit">Agregar producto</button>
+              <button class="btn btn-lg btn-black btn-block text-uppercase mt-5 footer-title-font" type="submit">Agregar producto</button>
             </form>
             @if(count($errors) > 0)
             <div class="alert alert-danger">

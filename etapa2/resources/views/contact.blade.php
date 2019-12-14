@@ -33,7 +33,7 @@
   <div class="text-center col-12 mb-5 alt-font22">
     <h6>Dejanos tu comentario!</h6>
   </div>
-  <div class="form bg-light text-center">
+  <div class="form text-center">
     <form>
       <div class="form-group alt-fontt">
         <label for="formName">Nombre</label>

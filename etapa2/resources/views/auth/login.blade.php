@@ -31,7 +31,7 @@
 
             <div class="form-label-group">
               <input type="password" id="password" class="form-control @error('password') is-invalid @enderror" autocomplete="current-password" name="password" placeholder="Password" required>
-              <label class="mt-3" for="inputPassword">Contraseña</label>
+              <label class="alt-fontt  mt-3" for="inputPassword">Contraseña</label>
             @error('password')
             <span class="invalid-feedback" role="alert">
                 <strong>{{ $message }}</strong>
@@ -41,10 +41,10 @@
 
             <div class="custom-control custom-checkbox mb-3">
               <input name="remember" type="checkbox" class="custom-control-input" id="remember" {{ old('remember') ? 'checked' : '' }}>
-              <label class="custom-control-label" for="remember">Recordar contraseña</label>
+              <label class="alt-fontt custom-control-label" for="remember">Recordar contraseña</label>
             </div>
 
-            <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Login</button>
+            <button class="btn btn-lg btn-black btn-block text-uppercase" type="submit">Login</button>
 
           </form>
         </div>

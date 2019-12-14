@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
 <!--  Show this only on mobile to medium screens  -->
-  <a class="navbar-brand d-lg-none" href="#"><img src="{{url('/images/drh_logo80.png')}}"></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+  <a class="navbar-brand d-lg-none" href="/"><img src="{{url('/images/drh_logo80.png')}}"></a>
+  <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 <!--  Use flexbox utility classes to change how the child elements are justified  -->
@@ -40,18 +40,18 @@
               {{ Auth::user()->name }} <span class="caret"></span>
           </a>
 
-          <div class="dropdown-menu dropdown-menu-right alt-font" aria-labelledby="navbarDropdown">
+          <div id="drop-color" class="dropdown-menu dropdown-menu-right alt-font" aria-labelledby="navbarDropdown">
                 @if (Auth::user()->isAdmin())
-                  <a class="dropdown-item" href="{{ route('admin') }}">
+                  <a class="alt-fontt dropdown-item" href="{{ route('admin') }}">
                       Admin
                   </a>
                 @endif
                 @auth
-                  <a class="dropdown-item" href="{{ route('profile') }}">
+                  <a class="alt-fontt  dropdown-item" href="{{ route('profile') }}">
                       Profile
                   </a>
                 @endauth
-              <a class="dropdown-item" href="{{ route('logout') }}"
+              <a class="alt-fontt dropdown-item" href="{{ route('logout') }}"
                   onclick="event.preventDefault();
                                 document.getElementById('logout-form').submit();">
                   {{ __('Logout') }}
