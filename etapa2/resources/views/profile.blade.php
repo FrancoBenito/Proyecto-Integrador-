@@ -37,7 +37,7 @@
 
         <h5 class="mb-5 mt-3">Tu información</h5>
 
-        <form class="form-horizontal" role="form" method="post" action="/profile">
+        <form id="modify-profile" class="form-horizontal" role="form" method="post" action="/profile">
         {{csrf_field()}}
           <div class="form-group">
             <label for="name"class="col-md-3 control-label">Nombre de usuario:</label>
@@ -80,7 +80,7 @@
             <div class="col-md-8">
               <input type="submit" class="btn btn-black" value="GUARDAR">
               <span></span>
-              <input type="reset" class="btn btn-black" value="CANCELAR">
+              <input type="reset" class="btn btn-black" value="CANCELAR" onclick="location.href='/';">
 
             </div>
           </div>
@@ -90,4 +90,9 @@
 </div>
 <hr>
 
+@endsection
+
+@section('js')
+<script src="/js/sweetalert.min.js"></script>
+<script src="/js/profile.js"></script>
 @endsection

@@ -15,7 +15,7 @@
         <div class="card card-signin my-5">
           <div id="card-color" class="card-body">
             <h5 class="card-title text-center alt-fontt">Registro</h5>
-            <form class="form-signin" method="POST" action="{{ route('register') }}"enctype="multipart/form-data">
+            <form id="set-register" class="form-signin" method="POST" action="{{ route('register') }}"enctype="multipart/form-data">
             @csrf
 
             
@@ -85,4 +85,6 @@
 
 @section('js')
 <script src="/js/provincias.js"></script>
+<script src="/js/sweetalert.min.js"></script>
+<script src="/js/register.js"></script>
 @endsection
